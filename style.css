@@ -294,6 +294,51 @@ footer { background: var(--navy-2); padding: 2.5rem 2rem; border-top: 1px solid 
 .footer-copy { color: rgba(255,255,255,0.2); font-size: 0.8rem; }
 .footer-copy a { color: var(--teal); text-decoration: none; }
 
+/* ── CASE STUDIES ── */
+.cases-hero { min-height: auto; padding: 8rem 2rem 4rem; }
+.cases-hero-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+.cases-hero-inner .eyebrow-wrap { justify-content: center; }
+.cases-hero-inner .hero-sub { margin: 0 auto; }
+
+.case-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.case-badge { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 20px; }
+.orange-badge { background: rgba(255,107,53,0.12); color: var(--orange); }
+.teal-badge { background: rgba(77,217,213,0.12); color: var(--teal); }
+.case-client { display: flex; align-items: center; gap: 0.75rem; }
+.case-avatar { width: 44px; height: 44px; border-radius: 10px; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.85rem; }
+.teal-avatar { background: var(--teal); color: var(--navy); }
+.case-client h3 { font-size: 1.2rem; font-weight: 700; margin: 0; }
+.case-type { font-size: 0.85rem; color: var(--text-muted); }
+
+.case-challenge { background: var(--off-white); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2rem; border-left: 3px solid var(--teal); }
+.case-challenge h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 0.5rem; }
+.case-challenge p { color: var(--text-muted); font-size: 0.95rem; }
+
+.case-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+.case-stat { padding: 1.5rem; border-radius: var(--radius); text-align: center; }
+.case-stat.orange { background: rgba(255,107,53,0.08); border: 1px solid rgba(255,107,53,0.2); }
+.case-stat.teal { background: rgba(77,217,213,0.08); border: 1px solid rgba(77,217,213,0.2); }
+.case-stat.navy { background: rgba(10,22,40,0.06); border: 1px solid rgba(10,22,40,0.12); }
+.case-stat.green { background: rgba(52,199,89,0.08); border: 1px solid rgba(52,199,89,0.2); }
+.case-stat-num { font-size: 2rem; font-weight: 900; color: var(--navy); line-height: 1; margin-bottom: 0.4rem; }
+.case-stat.orange .case-stat-num { color: var(--orange); }
+.case-stat.teal .case-stat-num { color: var(--teal-dark); }
+.case-stat.green .case-stat-num { color: #27ae60; }
+.case-stat-label { font-size: 0.85rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+.case-stat-period { font-size: 0.75rem; color: var(--text-muted); }
+
+.case-what { margin-bottom: 2rem; }
+.case-what h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem; }
+.case-what-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0.6rem; }
+.case-what-item { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text); }
+
+.case-insight { display: flex; gap: 1rem; align-items: flex-start; background: rgba(255,107,53,0.06); border: 1px solid rgba(255,107,53,0.15); border-radius: var(--radius); padding: 1.2rem; margin-top: 2rem; }
+.insight-icon { flex-shrink: 0; margin-top: 2px; }
+.case-insight strong { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.3rem; }
+.case-insight p { font-size: 0.85rem; color: var(--text-muted); }
+
+.case-divider { height: 1px; background: var(--border); max-width: 1140px; margin: 0 auto; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
