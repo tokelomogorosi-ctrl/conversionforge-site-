@@ -1,5 +1,5 @@
 {
-  "lastProcessedIndex": 1230,
+  "lastProcessedIndex": 1326,
   "sessionId": "d7f4da67-cbb0-4531-892a-e6fafcb1e879",
   "conversationId": "conv-82a4c7a7-ed94-48ae-978d-0275f6c6cd23",
   "lastBlockValues": {
@@ -12,5 +12,5 @@
     "system/tool_guidelines": "TOOL ROUTING:\n- boardroom-research-loop: digest new PDFs in ~/research/ (Gemini→Groq fallback)\n- boardroom-consensus: implementation + verification tasks (Qwen 1.5B × Groq 70B)\n- boardroom-gemini: deep research, paper analysis, multi-turn strategy\n- boardroom-local (Ollama): routine checks, quick questions, P2 tasks\n- world-model-update: promote U=1→U=0 in boardroom_world_model.json (Claude only)\n- boardroom-checkpoint: push SESSION_STATE.md to VPS crash_brief.md (runs every 15 min)\n- boardroom-sync: pull shared context from VPS to local ~/.boardroom/shared_context/\n\nKEY FILES:\n- ~/SESSION_STATE.md — current bot status, build queue, what was built (always read first)\n- ~/activities_log.md — full session history\n- ~/.claude/rules/collab-playbook.md — session protocol, Tabu rules\n- ~/.claude/reference/research-digests.md — 34 paper digests (load on demand, bot/research sessions only)\n- /root/trading_bot/syntheticfirm_vps.py — the bot (6,483 lines, v10.10)\n",
     "system/user_preferences": "Director: Tokelo Mogorosi. South African-born, UK-based, Sevenoaks.\nLost job December 2025. Building generational wealth through 6 autonomous engines.\nMother has Alzheimer's. Girlfriend and daughter (age 3). Family safety floor non-negotiable.\n\nCommunication style:\n- Plain English. No jargon without explanation. No flattery. No padding.\n- Say what is true and what to do next.\n- Corrects without softening — when he says no or redirects, take it literally.\n- Thinks in systems.\n- Autonomous operation preferred: act → communicate, not ask → act.\n- Only pause for: going live with trading, deleting data, spending real money.\n\nOutreach policy (Session 21):\n- Auto-send enabled for all outbound emails — no approval needed\n- Phone numbers logged for Director follow-up calls\n- Signature fumble acknowledged (54 sent without name block) — fixed going forward\n"
   },
-  "lastSeenMessageId": "message-e75333de-2c10-4207-a58b-d222367d45dc"
+  "lastSeenMessageId": "message-e7e90d83-17b6-458d-9887-128d670d784f"
 }
