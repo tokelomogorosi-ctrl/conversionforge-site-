@@ -142,7 +142,54 @@ nav {
 .trust-bar .container { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
 .trust-label { font-size: 0.8rem; color: #666; white-space: nowrap; }
 .trust-logos { display: flex; gap: 2rem; flex-wrap: wrap; }
-.trust-logo-item { font-size: 0.85rem; font-weight: 700; color: #444; letter-spacing: 0.05em; }
+.trust-logo-item {
+  font-size: 0.85rem; font-weight: 700; color: #888; letter-spacing: 0.05em;
+  text-decoration: none; transition: color 0.2s;
+}
+.trust-logo-item:hover { color: var(--teal); }
+
+/* ── CAPABILITY LADDER ── */
+.ladder-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem; margin-top: 3rem;
+}
+.ladder-card {
+  background: var(--white); padding: 2rem 1.75rem; border-radius: var(--radius);
+  border: 1px solid var(--border); text-decoration: none; color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  display: flex; flex-direction: column; gap: 0.85rem;
+  position: relative; overflow: hidden;
+}
+.ladder-card:hover {
+  transform: translateY(-4px); box-shadow: var(--shadow-lg);
+  border-color: var(--teal);
+}
+.ladder-card.featured { border-color: var(--teal); box-shadow: var(--shadow); }
+.ladder-num {
+  font-size: 0.75rem; font-weight: 900; letter-spacing: 0.15em;
+  color: var(--teal); padding: 0.25rem 0.6rem; background: var(--teal-mid);
+  border-radius: 4px; align-self: flex-start;
+}
+.ladder-card h3 {
+  font-size: 1.05rem; font-weight: 700; color: var(--charcoal); line-height: 1.25;
+}
+.ladder-card p { color: var(--text-muted); font-size: 0.9rem; flex: 1; }
+.ladder-eg {
+  font-size: 0.8rem; color: var(--charcoal); font-weight: 600;
+  padding-top: 0.85rem; border-top: 1px solid var(--border);
+}
+.ladder-cta {
+  font-size: 0.75rem; font-weight: 700; color: var(--teal);
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.ladder-cta::after {
+  content: ' →'; transition: transform 0.2s; display: inline-block;
+}
+.ladder-card:hover .ladder-cta::after { transform: translateX(4px); }
+.ladder-footnote {
+  text-align: center; margin-top: 2.5rem; font-size: 0.85rem;
+  color: var(--text-muted); font-style: italic;
+}
 
 /* ── SECTIONS ── */
 .section-white { padding: 6rem 2rem; background: var(--white); }

@@ -1,0 +1,3 @@
+*.bak.*
+.letta/
+.DS_Store
