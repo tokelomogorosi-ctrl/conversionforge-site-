@@ -358,6 +358,129 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 .footer-copy { color: #444; font-size: 0.8rem; }
 .footer-copy a { color: var(--teal); text-decoration: none; }
 
+/* ── LANDING PAGE MOTION (added 03 Jun 2026 — match cases.html energy) ── */
+
+/* Live Pipeline card: pulse + sequential entry + new-item slide-in */
+.hero-card {
+  position: relative; overflow: hidden;
+  /* hint a soft teal glow that fades in on hover */
+  transition: box-shadow 0.4s ease;
+}
+.hero-card:hover { box-shadow: 0 12px 48px rgba(77,217,213,0.22), var(--shadow-lg); }
+.hero-card::before {
+  content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(77,217,213,0.08) 0%, transparent 55%);
+  pointer-events: none; opacity: 0; transition: opacity 0.5s;
+}
+.hero-card:hover::before { opacity: 1; }
+
+.pipeline-item {
+  opacity: 0; transform: translateY(8px);
+  animation: pipeline-in 0.5s ease forwards;
+}
+.pipeline-item:nth-child(1) { animation-delay: 0.2s; }
+.pipeline-item:nth-child(2) { animation-delay: 0.55s; }
+.pipeline-item:nth-child(3) { animation-delay: 0.9s; }
+.pipeline-item:nth-child(4) { animation-delay: 1.25s; }
+.pipeline-item.swap-in {
+  /* Re-triggered by JS when a new item is added */
+  animation: pipeline-slide-in 0.55s ease;
+}
+.pipeline-item.swap-out {
+  animation: pipeline-slide-out 0.45s ease forwards;
+}
+@keyframes pipeline-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pipeline-slide-in {
+  from { opacity: 0; transform: translateY(-12px) scaleY(0.85); max-height: 0; }
+  to { opacity: 1; transform: translateY(0) scaleY(1); max-height: 80px; }
+}
+@keyframes pipeline-slide-out {
+  from { opacity: 1; transform: translateY(0); max-height: 80px; }
+  to { opacity: 0; transform: translateY(12px); max-height: 0; padding-top: 0; padding-bottom: 0; }
+}
+
+/* Status badges get a subtle pulse on "new lead" */
+.pipe-status.new {
+  animation: badge-pulse 2.4s ease-in-out infinite;
+}
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(77,217,213,0); }
+  50% { box-shadow: 0 0 0 6px rgba(77,217,213,0.18); }
+}
+
+/* Pulse dot in card footer — already styled, just confirm it pulses */
+.pulse-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #34C759;
+  display: inline-block; position: relative;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(52,199,89,0.45); }
+  50% { box-shadow: 0 0 0 8px rgba(52,199,89,0); }
+}
+
+/* ── 3D FLIP CARDS (.problem-card) ── */
+.problem-card {
+  background: transparent !important; box-shadow: none !important;
+  border: none !important; padding: 0 !important;
+  perspective: 1200px; min-height: 220px;
+}
+.problem-card:hover { transform: none; box-shadow: none; }
+.card-inner {
+  position: relative; width: 100%; height: 100%; min-height: 220px;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+}
+.problem-card:hover .card-inner { transform: rotateY(180deg); }
+.card-face {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
+  background: var(--white); border-radius: var(--radius);
+  padding: 2rem; border: 1px solid var(--border); box-shadow: var(--shadow);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.card-face.card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+  color: var(--charcoal); border-color: var(--teal-dark);
+  box-shadow: 0 12px 40px rgba(77,217,213,0.35);
+}
+.card-back h4 {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--charcoal-2); margin-bottom: 0.85rem; opacity: 0.7;
+}
+.card-back p { color: var(--charcoal); font-size: 1rem; line-height: 1.55; font-weight: 500; }
+.card-back .flip-hint {
+  font-size: 0.75rem; color: var(--charcoal-2); opacity: 0.5; margin-top: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-stagger > * {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.15s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.25s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.35s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(n+5) { transition-delay: 0.45s; opacity: 1; transform: translateY(0); }
+
+/* Honour reduced-motion (a11y) */
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-item, .reveal, .reveal-stagger > *,
+  .pulse-dot, .pipe-status.new { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+  .problem-card:hover .card-inner { transform: none; }
+}
+
 /* ── CASE STUDIES (added 03 Jun 2026 — Director-flagged half-done layout) ── */
 
 /* Looping hero video — sits above the page hero on cases.html */
