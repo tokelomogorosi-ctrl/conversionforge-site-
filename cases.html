@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies · Conversion Forge</title>
-  <meta name="description" content="Real results from real UK businesses. See how Conversion Forge helped 7 Oaks Grill and Persa London grow online." />
+  <meta name="description" content="Real results from real UK businesses. See how Conversion Forge helped 7 Oaks Grill, Persa London, and Chaplins Barbers grow online." />
   <link rel="canonical" href="https://conversionforge.co.uk/cases.html" />
   <meta property="og:title" content="Case Studies · Conversion Forge" />
   <meta property="og:description" content="Real numbers from real UK businesses. Every metric below is taken directly from platform data." />
@@ -319,8 +319,8 @@
           <p>Saman runs the only proper traditional barber shop on Sevenoaks high street. Real craft, no online presence. New clients couldn't find him, returning ones couldn't book him, the heritage of the trade never made it past the front door. He needed a site that did three things in order: people find him, people book, people walk in.</p>
         </div>
         <div class="case-feature">
-          <video autoplay muted loop playsinline preload="auto" poster="media/cases/chaplins-clipper.webp" aria-label="Brass barber scissors slowly rotating against ink-black background">
-            <source src="media/cases/chaplins-scissors-loop.mp4" type="video/mp4" />
+          <video autoplay muted loop playsinline preload="auto" poster="media/cases/chaplins-clipper.webp" aria-label="Chaplins-engraved professional barber clipper rotating into a six-component exploded view and back">
+            <source src="media/cases/chaplins-clipper-loop.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -443,6 +443,65 @@
       <p class="footer-copy">© Conversion Forge 2026 · <a href="mailto:info@conversionforge.co.uk">info@conversionforge.co.uk</a> · Sevenoaks, Kent</p>
     </div>
   </footer>
+
+  <script>
+  // Count-up: each .case-stat-num counts from 0 to its target value when it enters the viewport.
+  // Preserves prefixes (£, +, Top ), suffixes (%, +), comma formatting, and decimal precision.
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function parseTarget(text) {
+      var m = text.match(/^([^0-9.]*)(-?[\d,]+(?:\.\d+)?)([^0-9.]*)$/);
+      if (!m) return null;
+      var prefix = m[1] || '';
+      var raw = m[2].replace(/,/g, '');
+      var suffix = m[3] || '';
+      var hasComma = m[2].indexOf(',') !== -1;
+      var decimals = (raw.split('.')[1] || '').length;
+      var value = parseFloat(raw);
+      if (isNaN(value)) return null;
+      return { prefix: prefix, value: value, suffix: suffix, decimals: decimals, hasComma: hasComma };
+    }
+
+    function format(n, target) {
+      var rounded = target.decimals > 0 ? n.toFixed(target.decimals) : Math.round(n).toString();
+      if (target.hasComma) {
+        var parts = rounded.split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        rounded = parts.join('.');
+      }
+      return target.prefix + rounded + target.suffix;
+    }
+
+    function animate(el, target, duration) {
+      var start = performance.now();
+      el.textContent = format(0, target);
+      function step(now) {
+        var t = Math.min(1, (now - start) / duration);
+        var eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = format(target.value * eased, target);
+        if (t < 1) requestAnimationFrame(step);
+        else el.textContent = format(target.value, target);
+      }
+      requestAnimationFrame(step);
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        var target = parseTarget((el.dataset.target || el.textContent).trim());
+        if (!target) { io.unobserve(el); return; }
+        if (!el.dataset.target) el.dataset.target = el.textContent.trim();
+        animate(el, target, 1600);
+        io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.5 });
+
+    document.querySelectorAll('.case-stat-num, .stat-num').forEach(function (el) { io.observe(el); });
+  })();
+  </script>
 
 </body>
 </html>

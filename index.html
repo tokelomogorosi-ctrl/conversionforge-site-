@@ -649,6 +649,58 @@
   </footer>
 
   <script>
+  // Count-up animation on .stat-num — same pattern as cases.html for brand cohesion
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function parseTarget(text) {
+      var m = text.match(/^([^0-9.]*)(-?[\d,]+(?:\.\d+)?)([^0-9.]*)$/);
+      if (!m) return null;
+      var raw = m[2].replace(/,/g, '');
+      return {
+        prefix: m[1] || '',
+        value: parseFloat(raw),
+        suffix: m[3] || '',
+        decimals: (raw.split('.')[1] || '').length,
+        hasComma: m[2].indexOf(',') !== -1
+      };
+    }
+    function format(n, t) {
+      var r = t.decimals > 0 ? n.toFixed(t.decimals) : Math.round(n).toString();
+      if (t.hasComma) {
+        var p = r.split('.');
+        p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        r = p.join('.');
+      }
+      return t.prefix + r + t.suffix;
+    }
+    function animate(el, target) {
+      var start = performance.now(), duration = 1600;
+      el.textContent = format(0, target);
+      function step(now) {
+        var t = Math.min(1, (now - start) / duration);
+        var eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = format(target.value * eased, target);
+        if (t < 1) requestAnimationFrame(step);
+        else el.textContent = format(target.value, target);
+      }
+      requestAnimationFrame(step);
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        var t = parseTarget((el.dataset.target || el.textContent).trim());
+        if (!t || isNaN(t.value)) { io.unobserve(el); return; }
+        if (!el.dataset.target) el.dataset.target = el.textContent.trim();
+        animate(el, t);
+        io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(function (el) { io.observe(el); });
+  })();
+
   (function () {
     // Scroll-reveal: fade + slide-up grids as they enter viewport
     if ('IntersectionObserver' in window) {

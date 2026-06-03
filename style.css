@@ -386,6 +386,58 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 .footer-copy { color: #444; font-size: 0.8rem; }
 .footer-copy a { color: var(--teal); text-decoration: none; }
 
+/* ── STEP ICON HOVER ANIMATIONS (4 steps each does what it depicts) ── */
+
+.step-icon { display: inline-block; transition: transform 0.3s ease; transform-origin: center; }
+.step-card:hover .step-icon { transform: translateY(-3px); }
+
+/* Step 01: phone "ring" — small wobble */
+.steps-grid .step-card:nth-child(1):hover .step-icon svg {
+  animation: step-ring 0.7s ease;
+  transform-origin: 50% 80%;
+}
+@keyframes step-ring {
+  0%, 100% { transform: rotate(0); }
+  15% { transform: rotate(-12deg); }
+  30% { transform: rotate(10deg); }
+  45% { transform: rotate(-7deg); }
+  60% { transform: rotate(5deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+/* Step 02: build arrows spread + come back */
+.steps-grid .step-card:nth-child(2):hover .step-icon svg {
+  animation: step-spread 0.65s ease;
+}
+@keyframes step-spread {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.25); }
+}
+
+/* Step 03: 24/7 clock — slow continuous rotation */
+.steps-grid .step-card:nth-child(3):hover .step-icon svg {
+  animation: step-spin 3.5s linear infinite;
+}
+@keyframes step-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Step 04: tick "confirmation" pulse */
+.steps-grid .step-card:nth-child(4):hover .step-icon svg {
+  animation: step-tick 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes step-tick {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+/* Honour reduced-motion globally */
+@media (prefers-reduced-motion: reduce) {
+  .steps-grid .step-card:hover .step-icon,
+  .steps-grid .step-card:hover .step-icon svg { animation: none !important; transform: none !important; }
+}
+
 /* ── LANDING PAGE MOTION (added 03 Jun 2026 — match cases.html energy) ── */
 
 /* Live Pipeline card: pulse + sequential entry + new-item slide-in */
