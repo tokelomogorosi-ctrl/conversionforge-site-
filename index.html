@@ -3,22 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conversion Forge · Marketing systems for UK small businesses</title>
-  <meta name="description" content="Conversion Forge builds marketing systems that run themselves. Local search, AI outreach and conversion-focused sites for UK small businesses. Platform-verifiable numbers only. You own it from day one." />
-  <meta name="theme-color" content="#161310" />
-  <meta property="og:title" content="Conversion Forge · Marketing systems that run themselves" />
-  <meta property="og:description" content="Local search, AI outreach and conversion-focused sites for UK small businesses. No number without a source. You own it from day one." />
+  <title>Conversion Forge · Smart Marketing for UK Small Businesses</title>
+  <meta name="description" content="Conversion Forge builds autonomous marketing systems for UK small businesses. Lead generation, local SEO, and AI-powered outreach. Running 24/7 without you." />
+  <meta property="og:title" content="Conversion Forge · Smart Marketing for UK Small Businesses" />
+  <meta property="og:description" content="Autonomous marketing systems for UK small businesses. Lead generation, local SEO, AI-powered outreach. Running 24/7 without you." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://conversionforge.co.uk/" />
-  <meta property="og:image" content="https://conversionforge.co.uk/media/og-cover.png" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://conversionforge.co.uk/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E7C74'/%3E%3Cpath d='M8 22L13 10L16 17L19 13L24 22H8Z' fill='%23F5F1E8'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- Organization schema. Director identity + AI-search citation. -->
+  <!-- Organization schema. Director identity + 6-engine description for AI-search citation. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,23 +22,22 @@
     "name": "Conversion Forge",
     "alternateName": "CF",
     "url": "https://conversionforge.co.uk/",
-    "logo": "https://conversionforge.co.uk/media/og-cover.png",
-    "description": "Conversion Forge builds marketing systems for UK small businesses. Local SEO, AI-powered outreach, and conversion-focused websites, wired into systems that run without the operator and are owned by the client from day one.",
+    "logo": "https://conversionforge.co.uk/logo.png",
+    "description": "Conversion Forge builds autonomous marketing systems for UK small businesses. A multi-engine agency wiring local SEO, lead generation, and AI-powered outreach into systems that run without the operator.",
     "founder": {"@type": "Person", "name": "Tokelo Mogorosi", "jobTitle": "Founder, Conversion Forge"},
     "areaServed": {"@type": "Country", "name": "United Kingdom"},
-    "address": {"@type": "PostalAddress", "addressLocality": "Sevenoaks", "addressRegion": "Kent", "addressCountry": "GB"},
-    "email": "info@conversionforge.co.uk",
     "knowsAbout": [
       "Local SEO for UK small businesses",
       "AI-powered cold outreach",
       "Conversion rate optimisation",
-      "AI search visibility and llms.txt",
-      "eCommerce listing optimisation",
+      "Stripe payment integration",
+      "Schema markup and llms.txt",
       "Autonomous marketing systems"
     ],
     "sameAs": ["https://www.facebook.com/people/Conversion-Forge/61587717514082/"]
   }
   </script>
+  <!-- Service schema. Three core service offerings. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,537 +64,698 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Conversion-focused website with payment system",
+    "name": "Conversion forge: website plus payment system",
     "provider": {"@type": "Organization", "name": "Conversion Forge"},
     "areaServed": {"@type": "Country", "name": "United Kingdom"},
     "serviceType": "Web design and development",
-    "description": "Brand-cohered website, Stripe checkout, and handover bundle. Fast everywhere, owned by the client from day one."
+    "description": "Brand-cohered website, Stripe checkout, and handover bundle. Cloudflare Pages architecture, fast everywhere, owned by the client from day one."
   }
   </script>
-
-<style>
-  :root{
-    --ink:#161310; --ink-2:#2A251E; --ink-soft:#5C5446;
-    --paper:#F5F1E8; --paper-2:#ECE5D6; --paper-3:#E4DBC8;
-    --line:#DAD0BC; --line-soft:#E7DECD;
-    --brass:#9A6A2F; --brass-2:#B4853F;
-    --teal:#0E7C74; --teal-bright:#1FC6B8;
-    --maxw:1180px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.62;
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-  }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  a{color:inherit;text-decoration:none;}
-  img,svg,video{display:block;max-width:100%;}
-  h1,h2,h3,h4{font-family:"Space Grotesk",sans-serif;font-weight:700;line-height:1.05;margin:0;letter-spacing:-.018em;}
-  h2{font-size:clamp(29px,4vw,46px);}
-  h3{font-size:20px;}
-  p{margin:0 0 16px;}
-  .mono{font-family:"Space Mono",monospace;}
-  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin:0 0 18px;display:flex;align-items:center;gap:10px;}
-  .eyebrow::before{content:"";width:22px;height:1px;background:var(--brass);display:inline-block;}
-  .lead{max-width:36em;color:var(--ink-soft);font-size:19px;}
-
-  :focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px;}
-
-  /* buttons */
-  .btn{display:inline-flex;align-items:center;gap:9px;font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:15px;
-    padding:13px 22px;border-radius:11px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);transition:transform .16s ease,background .16s ease;cursor:pointer;}
-  .btn:hover{transform:translateY(-2px);}
-  .btn.ghost{background:transparent;color:var(--ink);}
-  .btn.ghost:hover{background:var(--ink);color:var(--paper);}
-  .btn.brass{background:var(--brass);border-color:var(--brass);color:#fff;}
-  .btn.brass:hover{background:var(--brass-2);}
-  .btn.wa{background:#1FA855;border-color:#1FA855;color:#fff;}
-  .btn.wa:hover{background:#17914a;}
-  .btn-sm{padding:9px 17px;font-size:14px;}
-
-  /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(245,241,232,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;}
-  .brand{display:flex;align-items:center;gap:11px;font-family:"Space Mono",monospace;font-weight:700;font-size:15px;letter-spacing:.02em;}
-  .brand .teal{color:var(--teal);}
-  .nav-links{display:flex;gap:28px;font-size:14.5px;align-items:center;}
-  .nav-links a{color:var(--ink-soft);}
-  .nav-links a:hover{color:var(--ink);}
-
-  /* hero */
-  .hero{padding:78px 0 66px;}
-  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;}
-  .hero h1{font-size:clamp(35px,5.3vw,60px);}
-  .hero h1 .em{color:var(--brass);}
-  .hero .sub{font-size:19px;color:var(--ink-soft);max-width:31em;margin-top:24px;}
-  .hero .cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
-  .hero .note{font-family:"Space Mono",monospace;font-size:11.5px;letter-spacing:.03em;color:var(--ink-soft);margin-top:30px;display:flex;align-items:center;gap:9px;}
-  .hero .note .tick{color:var(--teal);font-weight:700;}
-
-  /* instrument panel (signature) */
-  .panel{background:var(--ink);color:var(--paper);border-radius:16px;padding:24px;box-shadow:0 30px 70px -34px rgba(22,19,16,.6);border:1px solid #2c2620;}
-  .panel .phead{display:flex;justify-content:space-between;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-2);border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:14px;margin-bottom:8px;}
-  .panel .live{display:flex;align-items:center;gap:7px;color:#e9e2d4;}
-  .panel .live .pulse{width:8px;height:8px;border-radius:50%;background:var(--teal-bright);box-shadow:0 0 0 0 rgba(31,198,184,.6);animation:pulse 2.2s infinite;}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,198,184,.5);}70%{box-shadow:0 0 0 7px rgba(31,198,184,0);}100%{box-shadow:0 0 0 0 rgba(31,198,184,0);}}
-  .feed{min-height:148px;margin:6px 0 4px;}
-  .feed-row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07);opacity:0;transform:translateY(8px);animation:rowin .5s ease forwards;}
-  .feed-row .ic{width:30px;height:30px;border-radius:8px;background:rgba(31,198,184,.13);color:var(--teal-bright);display:flex;align-items:center;justify-content:center;flex:0 0 auto;font-family:"Space Mono",monospace;font-size:13px;}
-  .feed-row .who{font-size:13.5px;color:#efe9db;}
-  .feed-row .st{font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.04em;margin-left:auto;padding:3px 9px;border-radius:20px;}
-  .st.new{color:#7fe3d6;background:rgba(31,198,184,.12);}
-  .st.fu{color:#d9c79a;background:rgba(180,133,63,.16);}
-  .st.bk{color:#bfe8cf;background:rgba(47,168,85,.16);}
-  @keyframes rowin{to{opacity:1;transform:translateY(0);}}
-  .feed-row.out{animation:rowout .5s ease forwards;}
-  @keyframes rowout{to{opacity:0;transform:translateY(-8px);height:0;padding:0;margin:0;}}
-  .readouts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid rgba(255,255,255,.1);margin-top:6px;}
-  .ro{padding:14px 0 2px;text-align:center;border-right:1px solid rgba(255,255,255,.08);}
-  .ro:last-child{border-right:0;}
-  .ro .v{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:21px;}
-  .ro .l{font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a99e89;margin-top:3px;}
-
-  /* section system */
-  section.block{padding:76px 0;border-top:1px solid var(--line);}
-  section.block.tint{background:var(--paper-2);}
-  .block-head{max-width:40em;}
-  .block-head .lead{margin-top:14px;}
-
-  /* proof plates */
-  .proof{padding:34px 0;}
-  .plates{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-  .plate{background:#fff;border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:11px;padding:20px;}
-  .plate .num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:33px;line-height:1;}
-  .plate .what{margin:8px 0 12px;color:var(--ink-soft);font-size:14px;line-height:1.45;}
-  .plate .stamp{font-family:"Space Mono",monospace;font-size:10.5px;color:var(--teal);letter-spacing:.01em;display:flex;align-items:flex-start;gap:6px;line-height:1.4;}
-  .plate .stamp::before{content:"✓";font-weight:700;flex:0 0 auto;}
-
-  /* generic card grids */
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px;}
-  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px;}
-  .card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:24px;transition:transform .16s ease,border-color .16s ease;}
-  .card:hover{transform:translateY(-3px);border-color:var(--brass-2);}
-  .card .tag{font-family:"Space Mono",monospace;font-size:10.5px;color:var(--brass);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:13px;}
-  .card h3{font-size:18px;margin-bottom:8px;}
-  .card p{font-size:14.5px;color:var(--ink-soft);margin:0;}
-  .card .pop{display:inline-block;margin-top:13px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--teal);text-transform:uppercase;}
-
-  /* steps (real sequence) */
-  .steps{margin-top:42px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;}
-  .step{padding:26px 22px;border-right:1px solid var(--line);}
-  .step:last-child{border-right:0;}
-  .step .n{font-family:"Space Mono",monospace;font-size:12px;color:var(--brass);letter-spacing:.12em;}
-  .step h3{font-size:17px;margin:13px 0 8px;}
-  .step p{font-size:14px;color:var(--ink-soft);margin:0;}
-
-  /* services 8 */
-  .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px;}
-  .svc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;position:relative;transition:transform .16s ease,border-color .16s ease;}
-  .svc:hover{transform:translateY(-3px);border-color:var(--brass-2);}
-  .svc h3{font-size:16px;margin-bottom:7px;}
-  .svc p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.5;}
-  .svc .badge{position:absolute;top:16px;right:16px;font-family:"Space Mono",monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:rgba(14,124,116,.1);padding:3px 8px;border-radius:20px;}
-
-  /* work ladder */
-  .ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px;}
-  .lad{display:flex;flex-direction:column;background:var(--ink);color:var(--paper);border-radius:13px;padding:24px;transition:transform .16s ease;}
-  .lad:hover{transform:translateY(-3px);}
-  .lad .n{font-family:"Space Mono",monospace;font-size:12px;color:var(--brass-2);letter-spacing:.12em;}
-  .lad h3{color:var(--paper);margin:12px 0 9px;font-size:18px;}
-  .lad p{font-size:13.5px;color:#b9b0a0;margin:0 0 16px;}
-  .lad .eg{font-family:"Space Mono",monospace;font-size:11px;color:#e9e2d4;border-top:1px solid rgba(255,255,255,.12);padding-top:13px;margin-top:auto;}
-  .lad .go{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-bright);margin-top:11px;}
-
-  /* identity / the system */
-  .system{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-  .system .sig{font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:21px;line-height:1.4;}
-  .system .who{margin-top:26px;display:flex;align-items:center;gap:14px;}
-  .system .who .av{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:"Space Grotesk",sans-serif;font-weight:700;}
-  .system .who .nm{font-family:"Space Grotesk",sans-serif;font-weight:700;}
-  .system .who .rl{font-family:"Space Mono",monospace;font-size:11.5px;color:var(--ink-soft);letter-spacing:.03em;}
-  .creed{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;}
-  .creed li{list-style:none;padding:13px 0;border-bottom:1px solid var(--line-soft);font-size:15px;display:flex;gap:12px;align-items:flex-start;}
-  .creed li:last-child{border-bottom:0;}
-  .creed li .k{color:var(--teal);font-weight:700;flex:0 0 auto;font-family:"Space Mono",monospace;font-size:13px;margin-top:1px;}
-  .creed ul{margin:0;padding:0;}
-
-  /* pricing */
-  .prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px;align-items:start;}
-  .price{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;}
-  .price.feat{border:1px solid var(--brass);box-shadow:0 24px 50px -30px rgba(154,106,47,.5);position:relative;}
-  .price .fbadge{position:absolute;top:-12px;left:28px;background:var(--brass);color:#fff;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:20px;}
-  .price h3{font-size:19px;}
-  .price .desc{color:var(--ink-soft);font-size:14px;margin:6px 0 18px;}
-  .price .amt{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:42px;line-height:1;}
-  .price .amt .cur{font-size:24px;color:var(--ink-soft);vertical-align:top;}
-  .price .amt.custom{font-size:30px;}
-  .price ul{list-style:none;margin:20px 0 24px;padding:0;}
-  .price li{padding:8px 0;font-size:14.5px;color:var(--ink-2);display:flex;gap:10px;align-items:flex-start;}
-  .price li .k{color:var(--teal);font-weight:700;flex:0 0 auto;}
-  .price .btn{width:100%;justify-content:center;}
-
-  /* close */
-  .close{background:var(--ink);color:var(--paper);border-radius:20px;padding:62px;text-align:center;margin:78px auto;max-width:var(--maxw);}
-  .close h2{color:var(--paper);font-size:clamp(29px,4vw,46px);}
-  .close p{color:#bdb4a3;max-width:32em;margin:18px auto 30px;}
-  .close .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-  .close .meta{font-family:"Space Mono",monospace;font-size:11px;color:#8a8170;letter-spacing:.04em;margin-top:26px;}
-
-  footer{border-top:1px solid var(--line);padding:42px 0 64px;color:var(--ink-soft);font-size:13.5px;}
-  .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;}
-  .foot-links{display:flex;gap:20px;flex-wrap:wrap;}
-  .foot-links a:hover{color:var(--ink);}
-  .maker{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.05em;}
-
-  /* reveal on scroll */
-  .rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
-  .rev.in{opacity:1;transform:none;}
-
-  @media (max-width:900px){
-    .hero-grid{grid-template-columns:1fr;gap:38px;}
-    .plates{grid-template-columns:1fr 1fr;}
-    .grid-3,.grid-4,.services,.ladder,.prices,.system{grid-template-columns:1fr;}
-    .steps{grid-template-columns:1fr 1fr;}
-    .step:nth-child(2n){border-right:0;}
-    .step{border-bottom:1px solid var(--line);}
-    .nav-links{display:none;}
-    .close{padding:40px 22px;}
-  }
-  @media (max-width:520px){
-    .plates{grid-template-columns:1fr;}
-    .steps{grid-template-columns:1fr;}
-    .step{border-right:0;}
-  }
-  @media (prefers-reduced-motion:reduce){
-    *{animation:none !important;transition:none !important;scroll-behavior:auto;}
-    .rev{opacity:1;transform:none;}
-    .feed-row{opacity:1;transform:none;}
-  }
-</style>
-<noscript><style>.rev{opacity:1 !important;transform:none !important;}.feed-row{opacity:1 !important;transform:none !important;}</style></noscript>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="/" aria-label="Conversion Forge home">
-      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E7C74"/><path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#F5F1E8"/></svg>
-      CONVERSION&nbsp;<span class="teal">FORGE</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#how">How it works</a>
-      <a href="methodology.html">Methodology</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact" class="btn btn-sm">Book a strategy call</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">Marketing systems · UK small businesses</p>
-      <h1>At sixty miles an hour, the loudest noise is <span class="em">the silent execution of the system.</span></h1>
-      <p class="sub">While you are on the tools, the system is finding your next customer. Local search, AI outreach and a site that converts. No ad spend to start, and you own every part of it from day one.</p>
-      <div class="cta">
-        <a href="#contact" class="btn">Book a strategy call</a>
-        <a href="#work" class="btn ghost">See the numbers</a>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#4DD9D5"/>
+          <path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">CONVERSION <span class="teal">FORGE</span></span>
       </div>
-      <p class="note"><span class="tick">✓</span> Every figure on this page is shown with the platform it came from. No number without a source.</p>
-    </div>
-
-    <!-- the signature: a live instrument panel -->
-    <div class="panel" aria-label="Live system panel (illustrative of a running pipeline)">
-      <div class="phead"><span>PIPELINE · LIVE</span><span class="live"><span class="pulse"></span>running</span></div>
-      <div class="feed" id="feed" aria-hidden="true">
-        <div class="feed-row" style="animation-delay:.15s"><span class="ic">MP</span><span class="who">Mike's Plumbing · Sevenoaks</span><span class="st new">new lead</span></div>
-        <div class="feed-row" style="animation-delay:.30s"><span class="ic">KE</span><span class="who">Kent Electrical · Tonbridge</span><span class="st fu">follow-up</span></div>
-        <div class="feed-row" style="animation-delay:.45s"><span class="ic">PB</span><span class="who">Premier Builders · Maidstone</span><span class="st bk">call booked</span></div>
-        <div class="feed-row" style="animation-delay:.60s"><span class="ic">AR</span><span class="who">Ashford Roofing Co.</span><span class="st new">new lead</span></div>
-      </div>
-      <div class="readouts">
-        <div class="ro"><div class="v">£0</div><div class="l">ad spend</div></div>
-        <div class="ro"><div class="v">48h</div><div class="l">to live</div></div>
-        <div class="ro"><div class="v">24/7</div><div class="l">running</div></div>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#work">Recent work</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn-nav">Free Call</a>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- PROOF PLATES -->
-<section class="proof">
-  <div class="wrap">
-    <div class="plates rev">
-      <div class="plate">
-        <div class="num">28,000+</div>
-        <div class="what">accounts reached in 29 days, no ad spend behind it</div>
-        <div class="stamp">Instagram Insights · 7 Oaks Grill</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="eyebrow-wrap">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow">Marketing Systems · UK Small Businesses</span>
+        </div>
+        <h1>At 60 miles an hour, the loudest noise in this business comes from the <span class="teal-underline">silent execution</span> of our AI.</h1>
+        <p class="hero-sub">While you're on the tools, our system is finding your next client. Zero ad spend. Zero effort. Just a full pipeline.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.36 12a19.79 19.79 0 01-3-8.59A2 2 0 013.32 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Book Free Strategy Call
+          </a>
+          <a href="#how" class="btn-ghost">See how it works →</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>71,583</strong>
+            <span>views generated</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>28,000+</strong>
+            <span>accounts reached</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>29 days</strong>
+            <span>to results</span>
+          </div>
+        </div>
       </div>
-      <div class="plate">
-        <div class="num">+35.9%</div>
-        <div class="what">sales conversion rate after a full listing rebuild</div>
-        <div class="stamp">eBay Seller Hub · Persa London (our own brand)</div>
-      </div>
-      <div class="plate">
-        <div class="num">Top 5%</div>
-        <div class="what">eBay category ranking among all UK sellers</div>
-        <div class="stamp">eBay Seller Hub · Persa London (our own brand)</div>
-      </div>
-      <div class="plate">
-        <div class="num">Daily</div>
-        <div class="what">the booking site the client actually uses, every day</div>
-        <div class="stamp">client confirmation · Chaplins Barbers</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="block tint">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="eyebrow">The problem</p>
-      <h2>Your competitors are getting the jobs. Not because they are better. Because they are visible.</h2>
-    </div>
-    <div class="grid-3 rev">
-      <div class="card"><span class="tag">No time</span><h3>Marketing falls to the bottom</h3><p>You are on the tools all day. Promoting the business is the job that never gets done. The system does it while you work.</p></div>
-      <div class="card"><span class="tag">No safety net</span><h3>Word of mouth runs dry</h3><p>Referrals come and go. Quiet weeks hit hard. A system keeps the pipeline filling through the slow stretches.</p></div>
-      <div class="card"><span class="tag">No rent</span><h3>An agency you do not own</h3><p>Most agencies bill every month and show you a dashboard. We build a system you own outright, then hand it over.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="block" id="how">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="eyebrow">How it runs</p>
-      <h2>Four steps. Then it runs itself.</h2>
-    </div>
-    <div class="steps rev">
-      <div class="step"><div class="n">01</div><h3>Strategy call</h3><p>Thirty minutes. We map the business and pick the parts that move the needle first.</p></div>
-      <div class="step"><div class="n">02</div><h3>Core in 48 hours</h3><p>The first working part goes live in two days. The full system follows over about six weeks.</p></div>
-      <div class="step"><div class="n">03</div><h3>It runs</h3><p>Outreach, posting and search work on their own. You see platform numbers, not our promises.</p></div>
-      <div class="step"><div class="n">04</div><h3>You own it</h3><p>We hand over every credential and file. Keep working with us or run it yourself.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="block tint" id="services">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="eyebrow">What we build</p>
-      <h2>One system, wired end to end.</h2>
-      <p class="lead">Each part runs on its own once it is set up. Pick the ones that fit the business. Skip the ones that do not.</p>
-    </div>
-    <div class="services rev">
-      <div class="svc"><span class="badge">Popular</span><h3>AI outreach</h3><p>200 to 500 personalised emails a month into qualified inboxes, sent on a human rhythm so the address stays clean.</p></div>
-      <div class="svc"><h3>Found on Google and AI</h3><p>Local SEO plus the new AI-search pass that gets you cited by ChatGPT, Perplexity and Gemini. Schema and llms.txt included.</p></div>
-      <div class="svc"><h3>Google Business Profile</h3><p>Photos, posts, questions and review chasing. The profile most businesses leave half done is the one buyers click.</p></div>
-      <div class="svc"><h3>A site that converts</h3><p>Fast, mobile-first, written for the person reading it. Live in 48 hours for service businesses, two weeks for shops.</p></div>
-      <div class="svc"><span class="badge">New</span><h3>eBay, Etsy, Amazon</h3><p>Connect once. We push optimised listings with priced-to-market copy and proper item specifics, live in minutes.</p></div>
-      <div class="svc"><h3>Email that sells</h3><p>Welcome, cart-recovery, post-purchase and lapsed-buyer sequences. Written in your voice, not template-speak.</p></div>
-      <div class="svc"><h3>Your brand voice, captured</h3><p>We learn how you actually talk from your real work and reviews, so every email and listing sounds like you.</p></div>
-      <div class="svc"><h3>Product photos and imagery</h3><p>Studio-style shots from phone photos and on-brand lifestyle scenes. The visual layer that lifts the price you can ask.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- WORK -->
-<section class="block" id="work">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="eyebrow">Recent work</p>
-      <h2>Real businesses. Real platform numbers.</h2>
-      <p class="lead">Each card opens a live thing we built, a real client or our own brand. We only publish figures we can point to a platform for, and where a result has a caveat, we say so.</p>
-    </div>
-    <div class="ladder rev">
-      <a class="lad" href="https://tn14cars.co.uk" target="_blank" rel="noopener">
-        <div class="n">01 · Discover</div><h3>Get found</h3>
-        <p>Local SEO, Google Business Profile, schema and AI-search citation. Be the first name the buyer sees.</p>
-        <div class="eg">TN14 Cars · Sevenoaks, ranking on Google in 14 days</div>
-        <span class="go">See it live →</span>
-      </a>
-      <a class="lad" href="cases.html#persa-london" rel="noopener">
-        <div class="n">02 · Convert</div><h3>Turn views into sales</h3>
-        <p>Website and eCommerce work. Listings pushed to eBay and Etsy, priced against the market, written for the buyer.</p>
-        <div class="eg">Persa London · +35.9% conversion (our own brand)</div>
-        <span class="go">See the case study →</span>
-      </a>
-      <a class="lad" href="cases.html#7-oaks-grill" rel="noopener">
-        <div class="n">03 · Reach</div><h3>Get seen</h3>
-        <p>Content systems and automated posting in your own voice. You wake up to enquiries, not an empty feed.</p>
-        <div class="eg">7 Oaks Grill · 28,000+ reached in 29 days</div>
-        <span class="go">See the case study →</span>
-      </a>
-      <a class="lad" href="cases.html#chaplins-barbers" rel="noopener">
-        <div class="n">04 · Own</div><h3>Keep it for good</h3>
-        <p>A proper online home that matches the craft, built and handed over for one fee. You own the domain and the system.</p>
-        <div class="eg">Chaplins Barbers · owned outright, used daily</div>
-        <span class="go">See the case study →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- THE SYSTEM / IDENTITY -->
-<section class="block tint">
-  <div class="wrap system rev">
-    <div>
-      <p class="eyebrow">Who builds it</p>
-      <p class="sig">Conversion Forge is one operator and a marketing system he built. The system handles the repeatable work. The judgement, the taste and the call with you stay human.</p>
-      <div class="who">
-        <div class="av">TM</div>
-        <div>
-          <div class="nm">Tokelo Mogorosi</div>
-          <div class="rl">Founder · Sevenoaks, Kent · serving the UK</div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="card-header">
+            <div class="card-dot green"></div>
+            <div class="card-dot yellow"></div>
+            <div class="card-dot red"></div>
+            <span class="card-title">Live Pipeline · Today</span>
+          </div>
+          <div class="pipeline-items">
+            <div class="pipeline-item">
+              <div class="pipe-icon teal-bg">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="pipe-text">
+                <span class="pipe-name">Mike's Plumbing · Sevenoaks</span>
+                <span class="pipe-status new">New lead</span>
+              </div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-icon teal-bg">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="pipe-text">
+                <span class="pipe-name">Kent Electrical Ltd · Tonbridge</span>
+                <span class="pipe-status follow">Follow-up sent</span>
+              </div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-icon teal-bg">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="pipe-text">
+                <span class="pipe-name">Premier Builders · Maidstone</span>
+                <span class="pipe-status booked">Call booked ✓</span>
+              </div>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-icon teal-bg">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="pipe-text">
+                <span class="pipe-name">Ashford Roofing Co.</span>
+                <span class="pipe-status new">New lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="pulse-dot"></span>
+            <span>System running · 4 leads today</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="creed">
-      <ul>
-        <li><span class="k">01</span><span>No number without a source. Every figure we show names the platform it came from.</span></li>
-        <li><span class="k">02</span><span>You own it from day one. Credentials, files and the domain are yours, not rented back to you.</span></li>
-        <li><span class="k">03</span><span>We build on ourselves first. Persa London is our own brand and our first test bed.</span></li>
-        <li><span class="k">04</span><span>No ad spend to start. The system earns attention before it ever asks you to pay for it.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- PRICING -->
-<section class="block" id="pricing">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="eyebrow">Pricing</p>
-      <h2>Pay once. Or grow it together.</h2>
-      <p class="lead">Build a system you own outright. Add an ongoing arrangement when you want us to keep the pipeline growing. No lock-in either way.</p>
-    </div>
-    <div class="prices rev">
-      <div class="price">
-        <h3>Starter</h3>
-        <p class="desc">Get found online, fast.</p>
-        <div class="amt"><span class="cur">£</span>495</div>
-        <ul>
-          <li><span class="k">✓</span>Professional website</li>
-          <li><span class="k">✓</span>Google Business Profile setup</li>
-          <li><span class="k">✓</span>Local SEO foundation</li>
-          <li><span class="k">✓</span>30-day support</li>
-        </ul>
-        <a href="#contact" class="btn ghost">Get started</a>
-      </div>
-      <div class="price feat">
-        <span class="fbadge">Most popular</span>
-        <h3>Growth system</h3>
-        <p class="desc">The full automated pipeline.</p>
-        <div class="amt"><span class="cur">£</span>995</div>
-        <ul>
-          <li><span class="k">✓</span>Everything in Starter</li>
-          <li><span class="k">✓</span>Automated lead generation</li>
-          <li><span class="k">✓</span>Email outreach sequences</li>
-          <li><span class="k">✓</span>Monthly performance report</li>
-          <li><span class="k">✓</span>90-day support</li>
-        </ul>
-        <a href="#contact" class="btn brass">Get started</a>
-      </div>
-      <div class="price">
-        <h3>Full automation</h3>
-        <p class="desc">A system that runs around the clock.</p>
-        <div class="amt custom">Custom</div>
-        <ul>
-          <li><span class="k">✓</span>Everything in Growth</li>
-          <li><span class="k">✓</span>Pipeline runs 24/7</li>
-          <li><span class="k">✓</span>Multi-channel outreach</li>
-          <li><span class="k">✓</span>Dedicated account setup</li>
-          <li><span class="k">✓</span>Ongoing optimisation</li>
-        </ul>
-        <a href="#contact" class="btn ghost">Talk to us</a>
+  <!-- LOGOS / TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <span class="trust-label">Trusted by businesses across Kent & the South East</span>
+      <div class="trust-logos">
+        <a class="trust-logo-item" href="https://www.instagram.com/7oaksgrill/" target="_blank" rel="noopener">7 Oaks Grill</a>
+        <a class="trust-logo-item" href="https://www.ebay.co.uk/str/persalondon" target="_blank" rel="noopener">Persa London</a>
+        <a class="trust-logo-item" href="https://tn14cars.co.uk" target="_blank" rel="noopener">TN14 Cars</a>
+        <a class="trust-logo-item" href="https://tokelomogorosi-ctrl.github.io/joshfit-website/" target="_blank" rel="noopener">Joshfit PT</a>
+        <a class="trust-logo-item" href="https://tokelomogorosi-ctrl.github.io/chaplins-barbers-website/" target="_blank" rel="noopener">Chaplins Barbers</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CLOSE -->
-<div class="wrap">
-  <div class="close" id="contact">
-    <h2>Tell us the business. We will build the system.</h2>
-    <p>One strategy call, thirty minutes, no pitch. A working part live in 48 hours. Numbers you can check yourself.</p>
-    <div class="cta">
-      <a href="mailto:info@conversionforge.co.uk" class="btn brass">Email us</a>
-      <a href="https://wa.me/447881664892" class="btn wa" target="_blank" rel="noopener">WhatsApp</a>
+  <!-- PROBLEM -->
+  <section class="section-white" id="problem">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2>Your competitors are getting the jobs.<br/>Not because they're better. Because they're <em>visible</em>.</h2>
+      <div class="three-col reveal-stagger">
+        <div class="problem-card">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <div class="problem-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3>No time to market yourself</h3>
+              <p>You're on the tools all day. Marketing falls to the bottom of the list every single time.</p>
+            </div>
+            <div class="card-face card-back">
+              <h4>How we fix it</h4>
+              <p>The system runs while you work. 24/7 outreach, no input from you. Pipeline fills itself.</p>
+              <span class="flip-hint">↺ Hover any card</span>
+            </div>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <div class="problem-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <h3>Word of mouth isn't enough</h3>
+              <p>Referrals dry up. Quiet periods hit hard. You need a system, not a prayer.</p>
+            </div>
+            <div class="card-face card-back">
+              <h4>How we fix it</h4>
+              <p>Predictable inbound from day one. Pipeline stays full through quiet weeks, holidays, and lockouts.</p>
+              <span class="flip-hint">↺ Hover any card</span>
+            </div>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <div class="problem-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <h3>Ad spend with no return</h3>
+              <p>Most agencies charge £1,000/mo and show you a spreadsheet. We build systems you own outright.</p>
+            </div>
+            <div class="card-face card-back">
+              <h4>How we fix it</h4>
+              <p>Build it once for £950. You own the system outright. No monthly agency tax, no renting your own pipeline.</p>
+              <span class="flip-hint">↺ Hover any card</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="meta">Based in Sevenoaks · serving all of the UK</p>
-  </div>
-</div>
+  </section>
 
-<footer>
-  <div class="wrap foot">
-    <div class="brand">
-      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E7C74"/><path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#F5F1E8"/></svg>
-      CONVERSION&nbsp;<span class="teal">FORGE</span>
+  <!-- HOW IT WORKS -->
+  <section class="section-teal-light" id="how">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2>Four steps. One system.<br/>Clients while you sleep.</h2>
+      <div class="steps-grid reveal-stagger">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.36 12a19.79 19.79 0 01-3-8.59A2 2 0 013.32 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Free strategy call</h3>
+          <p>30 minutes. We map your highest-value customers and the fastest route to them.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>We build your system</h3>
+          <p>Google presence, automated outreach, lead capture. Built and configured in 48 hours.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>It runs 24/7</h3>
+          <p>The system contacts prospects, follows up, and books calls while you're on the job.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>You close the deals</h3>
+          <p>Qualified leads land in your inbox. You take the calls. We keep the pipeline full.</p>
+        </div>
+      </div>
     </div>
-    <div class="foot-links">
-      <a href="#how">How it works</a>
-      <a href="#work">Work</a>
-      <a href="methodology.html">Methodology</a>
-      <a href="#pricing">Pricing</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="mailto:info@conversionforge.co.uk">Contact</a>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section-dark" id="results">
+    <div class="container">
+      <div class="section-label light">Real Results</div>
+      <h2>Not promises.<br/><span class="teal">Proof.</span></h2>
+      <div class="results-grid reveal-stagger">
+        <div class="result-stat">
+          <div class="stat-num">71,583</div>
+          <div class="stat-label">Views generated for a Sevenoaks restaurant in 29 days</div>
+        </div>
+        <div class="result-stat">
+          <div class="stat-num">28k+</div>
+          <div class="stat-label">Accounts reached with zero ad spend</div>
+        </div>
+        <div class="result-stat">
+          <div class="stat-num">48h</div>
+          <div class="stat-label">From strategy call to live system</div>
+        </div>
+        <div class="result-stat">
+          <div class="stat-num">£0</div>
+          <div class="stat-label">Ad spend required to get started</div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">In 29 days, our Instagram went from invisible to reaching 28,000 accounts. The system runs itself. We just responded to the enquiries.</p>
+        <div class="quote-author">
+          <div class="quote-avatar">7O</div>
+          <div>
+            <strong>7 Oaks Grill</strong>
+            <span>Sevenoaks, Kent</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="wrap foot" style="margin-top:18px;">
-    <p style="margin:0;">© Conversion Forge 2026 · info@conversionforge.co.uk · Sevenoaks, Kent</p>
-    <span class="maker">Built and run on the system it sells.</span>
-  </div>
-</footer>
+  </section>
 
-<script>
-(function(){
-  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // reveal on scroll
-  if ('IntersectionObserver' in window && !rm){
-    var io = new IntersectionObserver(function(es){
-      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
-    document.querySelectorAll('.rev').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.rev').forEach(function(el){ el.classList.add('in'); });
-  }
+  <!-- SERVICES -->
+  <section class="section-white" id="services">
+    <div class="container">
+      <div class="section-label">What We Build</div>
+      <h2>Eight ways to make<br/>more money <span class="teal">on autopilot</span>.</h2>
+      <p class="section-sub">Each one runs on its own once it is set up. Pick the ones that fit your business. Skip the ones that don't.</p>
+      <div class="services-grid reveal-stagger">
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Cold outreach that lands</h3>
+          <p>200 to 500 personalised emails a month into qualified inboxes in your niche. Jitter built in to keep the sending IP clean. Replies come back, you book the call.</p>
+          <span class="service-tag">Most popular</span>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Found on Google. Found on AI.</h3>
+          <p>Local SEO and the new GEO pass that gets you cited by ChatGPT, Perplexity, Gemini. Schema, llms.txt, the lot. You appear where buyers actually look in 2026.</p>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Google Business Profile, finished</h3>
+          <p>Photos, posts, Q&amp;A, weekly updates, review chasing. The profile most local businesses leave half-done is the one most buyers actually click. We finish yours.</p>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>A website that converts</h3>
+          <p>Fast, mobile-first, written for the person reading it. Live in 48 hours for service businesses, 2 weeks for full shops. Built to turn visitors into bookings, not awards.</p>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+          </div>
+          <h3>eBay, Etsy, Amazon listings on autopilot</h3>
+          <p>Connect your account once. We push fully optimised listings with priced-to-market positioning, competitor-anchored copy, and proper item specifics. New SKU live in your store in minutes.</p>
+          <span class="service-tag">New</span>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Email sequences that sell</h3>
+          <p>Welcome series, cart-recovery, post-purchase, lapsed-buyer. Written in your voice, not template-speak. The cold contacts warm up, the past clients buy again.</p>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Your brand voice, captured</h3>
+          <p>We extract how you actually talk from your real work, calls, and reviews. Then every email, listing, post, and ad sounds like you wrote it on a good day. Even when we did.</p>
+        </div>
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+          </div>
+          <h3>Product photos and AI imagery</h3>
+          <p>Studio-style product shots from phone photos. Lifestyle scenes generated on brand. Spec graphics in your colour palette. The visual layer that pushes a £15 listing into a £25 listing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  // live pipeline rotation (carried from the original site, restyled)
-  var feed = document.getElementById('feed');
-  if(!feed || rm) return;
-  var pool = [
-    ['LS',"Lloyd & Sons Roofing · Tunbridge Wells",'new','new lead'],
-    ['MC',"Maidstone Carpentry Co.",'fu','follow-up'],
-    ['SH',"Sevenoaks Heating Engineers",'new','new lead'],
-    ['PG',"Premier Glazing · Bromley",'bk','call booked'],
-    ['KJ',"Kent Joinery · Westerham",'new','new lead'],
-    ['TL',"Tonbridge Locksmiths",'fu','follow-up'],
-    ['PT',"Patel Tiling · Orpington",'new','new lead'],
-    ['RP',"Riverside Plumbing · Edenbridge",'bk','call booked']
-  ];
-  var i = 0;
-  setInterval(function(){
-    var rows = feed.querySelectorAll('.feed-row');
-    if(rows.length < 1) return;
-    var oldest = rows[rows.length-1];
-    oldest.classList.add('out');
-    var n = pool[i % pool.length]; i++;
-    var fresh = document.createElement('div');
-    fresh.className = 'feed-row';
-    fresh.innerHTML = '<span class="ic">'+n[0]+'</span><span class="who">'+n[1]+'</span><span class="st '+n[2]+'">'+n[3]+'</span>';
-    feed.insertBefore(fresh, feed.firstChild);
-    setTimeout(function(){ oldest.remove(); }, 520);
-  }, 7000);
-})();
-</script>
+  <!-- CAPABILITY LADDER -->
+  <section class="section-light" id="work">
+    <div class="container">
+      <div class="section-label">Recent Work</div>
+      <h2>Four classes of system.<br/>Each one runs <span class="teal">without you</span>.</h2>
+      <p class="section-sub">Every card below opens a real working artefact. Not a screenshot, not a hypothetical. A live page, a real client, the actual thing we built.</p>
+      <div class="ladder-grid">
+        <a class="ladder-card reveal-on-scroll" href="https://tn14cars.co.uk" target="_blank" rel="noopener">
+          <div class="ladder-num">01</div>
+          <h3>Discover</h3>
+          <p>Local SEO, Google Business Profile, schema, GEO citation by ChatGPT and Perplexity. Be the first name the buyer sees when they search. Right for tradesmen and service businesses.</p>
+          <div class="ladder-eg">TN14 Cars · Sevenoaks chauffeur, ranking on Google in 14 days</div>
+          <span class="ladder-cta">See it live</span>
+        </a>
+        <a class="ladder-card reveal-on-scroll" href="cases.html#persa-london" rel="noopener">
+          <div class="ladder-num">02</div>
+          <h3>Convert</h3>
+          <p>Website CRO and eCommerce automation. Listings pushed straight to your eBay and Etsy via API. Competitor-anchored pricing. Pages written for the buyer reading at 11pm on the bus.</p>
+          <div class="ladder-eg">Persa London · premium markup of 60-150% over eBay, applied to live shop</div>
+          <span class="ladder-cta">See the case study</span>
+        </a>
+        <a class="ladder-card featured reveal-on-scroll" href="cases.html#persa-london" rel="noopener">
+          <div class="ladder-num">03</div>
+          <h3>Voice</h3>
+          <p>Brand voice extraction, content engine, AI imagery and lifestyle photography. Sound like yourself across emails, social, listings, and ads. Visuals that match. No template tells.</p>
+          <div class="ladder-eg">Persa London · Brand DNA manifesto in five mythologies, applied across every touchpoint</div>
+          <span class="ladder-cta">See the case study</span>
+        </a>
+        <a class="ladder-card reveal-on-scroll" href="cases.html#7-oaks-grill" rel="noopener">
+          <div class="ladder-num">04</div>
+          <h3>System</h3>
+          <p>Outreach, email sequences, CRM, content calendar, social automation. The whole marketing function packaged into one operating layer. You wake up to bookings and replies.</p>
+          <div class="ladder-eg">7 Oaks Grill · branded content, automated posting, monthly retainer</div>
+          <span class="ladder-cta">See the case study</span>
+        </a>
+      </div>
+      <p class="ladder-footnote">Most clients start with one class and add the others as they see what runs while they sleep.</p>
+    </div>
+  </section>
+
+  <!-- SCROLL REVEAL ANIMATION (no library, pure JS + CSS) -->
+  <style>
+    .reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+    .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal-on-scroll').forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal-on-scroll').forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+  <!-- PRICING -->
+  <section class="section-teal-light" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2>Pay once.<br/>Or grow it together.</h2>
+      <p class="section-sub">Build a system you own outright. Add an ongoing retainer when you want us to keep the pipeline growing. No lock-in contracts either way.</p>
+      <div class="pricing-grid reveal-stagger">
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Starter</h3>
+            <p>Get found online fast</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">£</span>495
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Professional website
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Google Business Profile setup
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Local SEO foundation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              30-day support
+            </li>
+          </ul>
+          <a href="#contact" class="btn-outline">Get started</a>
+        </div>
+
+        <div class="price-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="price-header">
+            <h3>Growth System</h3>
+            <p>Full automated pipeline</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">£</span>995
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Starter
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Automated lead generation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Email outreach sequences
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Monthly performance report
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              90-day support
+            </li>
+          </ul>
+          <a href="#contact" class="btn-primary">Get started</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Full Automation</h3>
+            <p>AI-powered 24/7 system</p>
+          </div>
+          <div class="price-amount custom">
+            Custom
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Growth
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              AI pipeline runs 24/7
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-channel outreach
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Dedicated account setup
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Ongoing optimisation
+            </li>
+          </ul>
+          <a href="#contact" class="btn-outline">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="section-dark" id="contact">
+    <div class="container">
+      <div class="cta-wrap">
+        <div class="cta-content">
+          <div class="section-label light">Get Started</div>
+          <h2>Book your free<br/>strategy call.</h2>
+          <p>30 minutes. No sales pitch. We'll show you exactly how many leads you're currently leaving on the table, and how to capture them.</p>
+          <ul class="cta-promises">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              No obligation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              No agency jargon
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Clear next steps, whatever you decide
+            </li>
+          </ul>
+          <div class="cta-buttons">
+            <a href="mailto:info@conversionforge.co.uk" class="btn-primary large">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email Us
+            </a>
+            <span class="cta-or">or</span>
+            <a href="https://wa.me/447881664892" class="btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.137.564 4.148 1.55 5.894L.057 23.944l6.204-1.623C7.94 23.376 9.935 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.493-5.197-1.349l-.373-.219-3.862 1.011 1.03-3.756-.24-.387A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-card">
+            <div class="cta-card-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.36 12a19.79 19.79 0 01-3-8.59A2 2 0 013.32 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <h4>Free 30-Minute Call</h4>
+            <p>Find out exactly how many leads your business is missing, and what it would take to capture them.</p>
+            <div class="cta-card-meta">
+              <span>📍 Based in Sevenoaks</span>
+              <span>🇬🇧 Serving all of the UK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#4DD9D5"/>
+          <path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#1a1a1a"/>
+        </svg>
+        <span class="logo-text">CONVERSION <span class="teal">FORGE</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="#how">How it works</a>
+        <a href="#work">Recent work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:info@conversionforge.co.uk">Contact</a>
+      </div>
+      <p class="footer-copy">© Conversion Forge 2026 · <a href="mailto:info@conversionforge.co.uk">info@conversionforge.co.uk</a> · Sevenoaks, Kent</p>
+    </div>
+  </footer>
+
+  <script>
+  // Count-up animation on .stat-num — same pattern as cases.html for brand cohesion
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function parseTarget(text) {
+      var m = text.match(/^([^0-9.]*)(-?[\d,]+(?:\.\d+)?)([^0-9.]*)$/);
+      if (!m) return null;
+      var raw = m[2].replace(/,/g, '');
+      return {
+        prefix: m[1] || '',
+        value: parseFloat(raw),
+        suffix: m[3] || '',
+        decimals: (raw.split('.')[1] || '').length,
+        hasComma: m[2].indexOf(',') !== -1
+      };
+    }
+    function format(n, t) {
+      var r = t.decimals > 0 ? n.toFixed(t.decimals) : Math.round(n).toString();
+      if (t.hasComma) {
+        var p = r.split('.');
+        p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        r = p.join('.');
+      }
+      return t.prefix + r + t.suffix;
+    }
+    function animate(el, target) {
+      var start = performance.now(), duration = 1600;
+      el.textContent = format(0, target);
+      function step(now) {
+        var t = Math.min(1, (now - start) / duration);
+        var eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = format(target.value * eased, target);
+        if (t < 1) requestAnimationFrame(step);
+        else el.textContent = format(target.value, target);
+      }
+      requestAnimationFrame(step);
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        var t = parseTarget((el.dataset.target || el.textContent).trim());
+        if (!t || isNaN(t.value)) { io.unobserve(el); return; }
+        if (!el.dataset.target) el.dataset.target = el.textContent.trim();
+        animate(el, t);
+        io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(function (el) { io.observe(el); });
+  })();
+
+  (function () {
+    // Scroll-reveal: fade + slide-up grids as they enter viewport
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+      document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) { el.classList.add('is-visible'); });
+    }
+
+    // Live Pipeline rotation: every 8s the bottom item slides out and a fresh lead slides in at top
+    var pipeline = document.querySelector('.pipeline-items');
+    if (!pipeline) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var pool = [
+      { name: 'Lloyd & Sons Roofing · Tunbridge Wells', status: 'new', label: 'New lead' },
+      { name: 'Maidstone Carpentry Co.', status: 'follow', label: 'Follow-up sent' },
+      { name: 'Sevenoaks Heating Engineers', status: 'new', label: 'New lead' },
+      { name: 'Premier Glazing · Bromley', status: 'booked', label: 'Call booked ✓' },
+      { name: 'Kent Joinery · Westerham', status: 'new', label: 'New lead' },
+      { name: 'Tonbridge Locksmiths', status: 'follow', label: 'Follow-up sent' },
+      { name: 'Patel Tiling · Orpington', status: 'new', label: 'New lead' },
+      { name: 'Riverside Plumbing · Edenbridge', status: 'booked', label: 'Call booked ✓' }
+    ];
+    var iconSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+    var idx = 0;
+    function rotate() {
+      var items = pipeline.querySelectorAll('.pipeline-item');
+      if (items.length < 1) return;
+      var oldest = items[items.length - 1];
+      oldest.classList.add('swap-out');
+
+      var next = pool[idx % pool.length]; idx++;
+      var fresh = document.createElement('div');
+      fresh.className = 'pipeline-item swap-in';
+      fresh.innerHTML =
+        '<div class="pipe-icon teal-bg">' + iconSvg + '</div>' +
+        '<div class="pipe-text">' +
+          '<span class="pipe-name">' + next.name + '</span>' +
+          '<span class="pipe-status ' + next.status + '">' + next.label + '</span>' +
+        '</div>';
+      pipeline.insertBefore(fresh, pipeline.firstChild);
+
+      setTimeout(function () { oldest.remove(); fresh.classList.remove('swap-in'); }, 600);
+    }
+    setInterval(rotate, 8000);
+  })();
+  </script>
 
 </body>
 </html>
