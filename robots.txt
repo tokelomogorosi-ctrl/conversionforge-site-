@@ -1,0 +1,29 @@
+# Conversion Forge — robots.txt
+# All crawlers welcome, including AI / answer-engine crawlers.
+
+User-agent: *
+Allow: /
+
+# AI and answer-engine crawlers, explicitly permitted for AI-search citation.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://conversionforge.co.uk/sitemap.xml
