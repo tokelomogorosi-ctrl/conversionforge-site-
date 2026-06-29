@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Website Audit · Conversion Forge</title>
+  <meta name="description" content="Get a free website audit for your UK small business. We show you whether people find you when they search, what is quietly costing you customers, and what to fix first. No pitch, just a plan." />
+  <meta property="og:title" content="Free Website Audit · Conversion Forge" />
+  <meta property="og:description" content="Find out whether people find you or your competitor when they search. Free website audit. No pitch, just a plan to get you found." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://conversionforge.co.uk/free-audit" />
+  <link rel="canonical" href="https://conversionforge.co.uk/free-audit" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Service + Offer schema. The free audit, priced at zero, no obligation. Matches the JSON-LD pattern used site-wide. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Free website audit",
+    "provider": {"@type": "Organization", "name": "Conversion Forge", "url": "https://conversionforge.co.uk/"},
+    "areaServed": {"@type": "Country", "name": "United Kingdom"},
+    "serviceType": "Website audit",
+    "description": "A free website audit for UK small businesses. We check whether you show up when people search, what is quietly costing you customers, and what to fix first. You keep the plan whether you work with us or not.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP",
+      "description": "Free website audit. No obligation."
+    }
+  }
+  </script>
+
+  <!-- Page-scoped styles. Additive only, reuses the brand tokens in style.css. Keeps the landing page focused on one action. -->
+  <style>
+    /* Minimal header: logo only, no menu, so nothing pulls attention from the audit. */
+    .fa-nav .nav-inner { justify-content: center; }
+    @media (min-width: 600px) { .fa-nav .nav-inner { justify-content: flex-start; } }
+
+    /* Centred hero for ad traffic. */
+    .fa-hero { padding: 7.5rem 2rem 3.5rem; background: var(--white); text-align: center; }
+    .fa-hero-inner { max-width: 760px; margin: 0 auto; }
+    .fa-hero .eyebrow-wrap { justify-content: center; }
+    .fa-hero h1 {
+      font-size: clamp(1.9rem, 4.4vw, 2.9rem); font-weight: 900;
+      letter-spacing: -0.03em; line-height: 1.15; color: var(--charcoal);
+      margin-bottom: 1.25rem; text-wrap: balance;
+    }
+    .fa-hero h1 .teal { color: var(--teal); }
+    .fa-hero-sub { font-size: 1.15rem; color: var(--text-muted); max-width: 520px; margin: 0 auto 2rem; }
+    .fa-hero-cta { display: flex; justify-content: center; }
+
+    /* Audit benefits list. About them, not us. */
+    .fa-audit-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.1rem 2rem; margin-top: 2.5rem; }
+    .fa-audit-list li { display: flex; align-items: flex-start; gap: 0.85rem; font-size: 1rem; color: var(--text); line-height: 1.55; }
+    .fa-audit-list li svg { flex-shrink: 0; margin-top: 0.25rem; }
+    .fa-audit-list li strong { display: block; color: var(--charcoal); font-weight: 700; margin-bottom: 0.15rem; }
+
+    /* Reassurance band. */
+    .fa-reassure { max-width: 720px; margin: 2.5rem auto 0; text-align: center; }
+    .fa-reassure .fa-promise { font-size: 1.25rem; font-weight: 700; color: var(--charcoal); line-height: 1.4; margin-bottom: 1rem; text-wrap: balance; }
+    .fa-reassure p { color: var(--text-muted); font-size: 1rem; max-width: 560px; margin: 0 auto; }
+    .fa-value-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1.75rem; }
+    .fa-value-tag {
+      font-size: 0.85rem; font-weight: 700; color: var(--teal-dark);
+      background: var(--teal-mid); padding: 0.5rem 1rem; border-radius: 999px;
+    }
+
+    /* Proof. Honest, own organic result. */
+    .fa-proof { text-align: center; }
+    .fa-proof-num { font-size: clamp(2.8rem, 7vw, 4.5rem); font-weight: 900; color: var(--teal); line-height: 1; margin-bottom: 0.75rem; }
+    .fa-proof-line { font-size: 1.15rem; color: #ddd; max-width: 540px; margin: 0 auto 0.75rem; }
+    .fa-proof-label { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; }
+
+    /* Booking form. The one action on the page. */
+    .fa-form-wrap { max-width: 620px; margin: 2.5rem auto 0; }
+    .fa-form { display: grid; gap: 1.1rem; background: var(--white); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+    .fa-field { display: flex; flex-direction: column; gap: 0.4rem; text-align: left; }
+    .fa-field label { font-size: 0.85rem; font-weight: 700; color: var(--charcoal); }
+    .fa-field .fa-optional { font-weight: 500; color: var(--text-muted); }
+    .fa-field input, .fa-field textarea {
+      font-family: var(--font); font-size: 1rem; color: var(--text);
+      padding: 0.85rem 1rem; border: 1.5px solid var(--border); border-radius: 8px;
+      background: var(--white); width: 100%; transition: border-color 0.2s;
+    }
+    .fa-field input:focus, .fa-field textarea:focus { outline: none; border-color: var(--teal); }
+    .fa-field textarea { resize: vertical; min-height: 96px; }
+    .fa-form .btn-primary { justify-content: center; width: 100%; padding: 1rem 1.8rem; font-size: 1.05rem; margin-top: 0.5rem; }
+    .fa-hp { position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    /* Fallbacks below the form. */
+    .fa-fallback { text-align: center; margin-top: 1.75rem; }
+    .fa-fallback p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; }
+    .fa-fallback-buttons { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem; }
+    .fa-mailto { font-size: 0.95rem; color: var(--teal-dark); font-weight: 600; text-decoration: none; }
+    .fa-mailto:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      .fa-hero { padding: 6.5rem 1.25rem 3rem; }
+      .fa-form { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV: logo only. No menu on purpose. The single job of this page is to book the audit. -->
+  <nav class="fa-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/" style="text-decoration:none;">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#4DD9D5"/>
+          <path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">CONVERSION <span class="teal">FORGE</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="fa-hero">
+    <div class="fa-hero-inner">
+      <div class="eyebrow-wrap">
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow">Free Website Audit · UK Small Businesses</span>
+      </div>
+      <h1>When someone Googles a business like yours, do they find you, or your <span class="teal">competitor</span>?</h1>
+      <p class="fa-hero-sub">Get a free website audit. No pitch, just a plan to get you found.</p>
+      <div class="fa-hero-cta">
+        <a href="#book" class="btn-primary large">Book my free audit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THE AUDIT GIVES THEM -->
+  <section class="section-white" id="audit">
+    <div class="container">
+      <div class="section-label">What you get</div>
+      <h2>A clear look at why<br/>the work is going elsewhere.</h2>
+      <p class="section-sub">In plain English, no jargon. Here is what the audit tells you about your business.</p>
+      <ul class="fa-audit-list">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Do people find you when they search?</strong>Whether you show up on Google when someone looks for what you do, or whether your competitor gets the click.</span>
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>What is quietly costing you customers</strong>The small things on your site or profile that turn people away before they ever call you.</span>
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>What to fix first</strong>The one change that makes the biggest difference, so you are not guessing where to start.</span>
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DD9D5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Whether a website would pay for itself</strong>An honest read on what a proper site or profile could bring back for a business like yours.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REASSURANCE / NO-RISK -->
+  <section class="section-teal-light" id="no-risk">
+    <div class="container">
+      <div class="fa-reassure">
+        <div class="section-label">No risk</div>
+        <p class="fa-promise">No pitch. No hard sell. You keep the plan whether you work with us or not.</p>
+        <p>And if you do decide to fix things, websites start from £175. You own it outright. No monthly agency fees, ever.</p>
+        <div class="fa-value-row">
+          <span class="fa-value-tag">Websites from £175</span>
+          <span class="fa-value-tag">You own it</span>
+          <span class="fa-value-tag">No monthly fees</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="section-dark" id="proof">
+    <div class="container">
+      <div class="fa-proof">
+        <div class="fa-proof-num">28,000</div>
+        <p class="fa-proof-line">accounts reached in 29 days, with £0 spent on ads.</p>
+        <p class="fa-proof-label">Conversion Forge's own organic result</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM: the one action -->
+  <section class="section-white" id="book">
+    <div class="container">
+      <div class="section-label">Book it</div>
+      <h2 style="text-align:center;">Book your free audit.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;">Fill this in and we will send your plan back. It takes under a minute.</p>
+
+      <div class="fa-form-wrap">
+        <!-- DIRECTOR: replace REPLACE_WITH_FORM_ID with your Formspree form id (free, 2 min at formspree.io, confirm hello@conversionforge.co.uk) -->
+        <form class="fa-form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New free audit request from conversionforge.co.uk/free-audit" />
+          <!-- Honeypot spam trap. Bots fill it, people do not. Formspree drops anything with this filled. -->
+          <input type="text" name="_gotcha" class="fa-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="fa-field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="fa-field">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business" required autocomplete="organization" />
+          </div>
+          <div class="fa-field">
+            <label for="link">Current website or social link <span class="fa-optional">(optional)</span></label>
+            <input type="text" id="link" name="website_or_social" inputmode="url" placeholder="e.g. yourbusiness.co.uk or your Instagram" />
+          </div>
+          <div class="fa-field">
+            <label for="frustration">What is your biggest frustration getting found online?</label>
+            <textarea id="frustration" name="biggest_frustration" rows="4"></textarea>
+          </div>
+          <div class="fa-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="fa-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          </div>
+
+          <button type="submit" class="btn-primary">Book my free audit</button>
+        </form>
+
+        <div class="fa-fallback">
+          <p>Prefer to message us instead?</p>
+          <div class="fa-fallback-buttons">
+            <!-- DIRECTOR: WhatsApp number is pre-filled with the main-site number (447881664892). Replace REPLACE_WITH_NUMBER style if you want a different number for ad leads. -->
+            <a class="btn-whatsapp" href="https://wa.me/447881664892?text=Hi%20Conversion%20Forge%2C%20I%27d%20like%20a%20free%20website%20audit." target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.137.564 4.148 1.55 5.894L.057 23.944l6.204-1.623C7.94 23.376 9.935 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.493-5.197-1.349l-.373-.219-3.862 1.011 1.03-3.756-.24-.387A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Message us on WhatsApp
+            </a>
+            <a class="fa-mailto" href="mailto:hello@conversionforge.co.uk?subject=Free%20website%20audit%20request">Or email hello@conversionforge.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#4DD9D5"/>
+          <path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="#1a1a1a"/>
+        </svg>
+        <span class="logo-text">CONVERSION <span class="teal">FORGE</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="/#how">How it works</a>
+        <a href="/#work">Recent work</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:hello@conversionforge.co.uk">Contact</a>
+      </div>
+      <p class="footer-copy">© Conversion Forge 2026 · <a href="mailto:hello@conversionforge.co.uk">hello@conversionforge.co.uk</a> · Sevenoaks, Kent</p>
+    </div>
+  </footer>
+
+</body>
+</html>
