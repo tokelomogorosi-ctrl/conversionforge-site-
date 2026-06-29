@@ -1,3 +1,4 @@
 *.bak.*
 .letta/
 .DS_Store
+.gstack/
