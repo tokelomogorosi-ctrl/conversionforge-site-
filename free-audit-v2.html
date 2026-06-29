@@ -36,6 +36,15 @@
 
   <!-- Page-scoped styles. Additive only, reuses the brand tokens in style.css. Keeps the landing page focused on one action. -->
   <style>
+    /* Video hero — reuses the methodology hero pattern (existing asset, no re-encode). */
+    .fa-hero-video{position:relative;overflow:hidden;background:#0A1628;min-height:82vh;display:flex;align-items:center;}
+    .fa-hero-video .fa-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+    .fa-hero-video .fa-hero-veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,22,40,.60) 0%,rgba(10,22,40,.80) 58%,rgba(10,22,40,.93) 100%);}
+    .fa-hero-video .fa-hero-inner{position:relative;z-index:2;margin:0 auto;}
+    .fa-hero-video h1{color:#fff;}
+    .fa-hero-video .fa-hero-sub{color:rgba(255,255,255,.82);}
+    .fa-hero-video .fa-value-tag{background:rgba(77,217,213,.16);color:#7eeae6;}
+    @media (prefers-reduced-motion:reduce){.fa-hero-video .fa-hero-bg{display:none;}}
     /* Minimal header: logo only, no menu, so nothing pulls attention from the audit. */
     .fa-nav .nav-inner { justify-content: center; }
     @media (min-width: 600px) { .fa-nav .nav-inner { justify-content: flex-start; } }
@@ -120,7 +129,9 @@
   </nav>
 
   <!-- HERO -->
-  <section class="fa-hero">
+  <section class="fa-hero fa-hero-video">
+    <video class="fa-hero-bg" autoplay muted loop playsinline preload="auto" poster="media/methodology/architecture.webp"><source src="media/methodology/hero-loop.mp4" type="video/mp4" /></video>
+    <div class="fa-hero-veil"></div>
     <div class="fa-hero-inner">
       <div class="eyebrow-wrap">
         <span class="eyebrow-dot"></span>
