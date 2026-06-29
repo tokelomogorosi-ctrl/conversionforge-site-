@@ -64,7 +64,8 @@
 
     var logo = '<svg width="22" height="22" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="' + TEAL + '"/><path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="' + INK + '"/></svg>';
     var btn = el('button', 'cfw-btn'); btn.setAttribute('aria-label', 'Chat with Conversion Forge');
-    btn.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.8 2 10.5c0 2.6 1.4 4.9 3.6 6.4-.1 1-.6 2.4-1.3 3.4-.2.3 0 .7.4.6 1.9-.4 3.4-1.1 4.4-1.7.9.2 1.9.3 2.9.3 5.5 0 10-3.8 10-8.5S17.5 2 12 2z"/></svg>';
+    // The actual Conversion Forge logo mark (teal mountain), framed for presence.
+    btn.innerHTML = '<svg width="32" height="22" viewBox="6 9 20 14" fill="currentColor" aria-hidden="true"><path d="M8 22L13 10L16 17L19 13L24 22H8Z"/></svg>';
     root.appendChild(btn);
 
     var panel = el('div', 'cfw-panel');
