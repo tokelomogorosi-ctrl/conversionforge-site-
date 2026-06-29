@@ -4,6 +4,10 @@
 (function () {
   'use strict';
   var ENDPOINT = 'https://cf-chatbot.tmogorosi-mgmt.workers.dev/chat';
+  var EVENT = 'https://cf-chatbot.tmogorosi-mgmt.workers.dev/event';
+  // ACE: one anonymous id per page load, so the bot can learn which conversations convert.
+  var SESSION = 's' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+  function aceEvent(type) { try { fetch(EVENT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ session: SESSION, type: type }), keepalive: true }); } catch (e) {} }
   var AUDIT = 'https://conversionforge.co.uk/free-audit';
   var WHATSAPP = 'https://wa.me/447881664892?text=Hi%20Conversion%20Forge%2C%20I%27d%20like%20to%20talk%20about%20a%20project.';
   var GREETING = "Hi, I'm the Conversion Forge assistant. What's your business, and what do you want more of online?";
@@ -76,6 +80,11 @@
     var sendBtn = panel.querySelector('.cfw-send');
 
     function scroll() { body.scrollTop = body.scrollHeight; }
+    // ACE: a click on an audit / WhatsApp link inside a reply is a conversion signal.
+    body.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a') : null;
+      if (a && a.href) { if (a.href.indexOf('free-audit') > -1) aceEvent('link_audit'); else if (a.href.indexOf('wa.me') > -1) aceEvent('link_whatsapp'); }
+    });
     function addBot(text) { var m = el('div', 'cfw-msg cfw-bot'); m.innerHTML = linkify(text); body.appendChild(m); scroll(); }
     function addMe(text) { var m = el('div', 'cfw-msg cfw-me', esc(text)); body.appendChild(m); scroll(); }
 
@@ -84,7 +93,7 @@
       CHIPS.forEach(function (c) {
         var chip = el('button', 'cfw-chip', c.label);
         chip.onclick = function () {
-          if (c.href) { window.open(c.href, '_blank', 'noopener'); return; }
+          if (c.href) { aceEvent('chip_human'); window.open(c.href, '_blank', 'noopener'); return; }
           wrap.remove(); send(c.send);
         };
         wrap.appendChild(chip);
@@ -99,7 +108,7 @@
       history.push({ role: 'user', content: text });
       busy = true; sendBtn.disabled = true;
       var typing = el('div', 'cfw-typing', 'Conversion Forge is typing...'); body.appendChild(typing); scroll();
-      fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history }) })
+      fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history, session: SESSION }) })
         .then(function (r) { return r.json(); })
         .then(function (d) {
           typing.remove();
