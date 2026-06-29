@@ -35,6 +35,15 @@
 
   <!-- Page-scoped styles. Additive only, reuses the brand tokens in style.css. Keeps the landing page focused on one action. -->
   <style>
+    /* Video hero — reuses the methodology hero pattern (existing asset, no re-encode). */
+    .fa-hero-video{position:relative;overflow:hidden;background:#0A1628;min-height:82vh;display:flex;align-items:center;}
+    .fa-hero-video .fa-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+    .fa-hero-video .fa-hero-veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,22,40,.60) 0%,rgba(10,22,40,.80) 58%,rgba(10,22,40,.93) 100%);}
+    .fa-hero-video .fa-hero-inner{position:relative;z-index:2;margin:0 auto;}
+    .fa-hero.fa-hero-video h1{color:#fff;text-shadow:0 2px 24px rgba(10,22,40,.6);}
+    .fa-hero-video .fa-hero-sub{color:rgba(255,255,255,.82);}
+    .fa-hero-video .fa-value-tag{background:rgba(77,217,213,.16);color:#7eeae6;}
+    @media (prefers-reduced-motion:reduce){.fa-hero-video .fa-hero-bg{display:none;}}
     /* Minimal header: logo only, no menu, so nothing pulls attention from the audit. */
     .fa-nav .nav-inner { justify-content: center; }
     @media (min-width: 600px) { .fa-nav .nav-inner { justify-content: flex-start; } }
@@ -119,16 +128,23 @@
   </nav>
 
   <!-- HERO -->
-  <section class="fa-hero">
+  <section class="fa-hero fa-hero-video">
+    <video class="fa-hero-bg" autoplay muted loop playsinline preload="auto" poster="media/methodology/architecture.webp"><source src="media/methodology/hero-loop.mp4" type="video/mp4" /></video>
+    <div class="fa-hero-veil"></div>
     <div class="fa-hero-inner">
       <div class="eyebrow-wrap">
         <span class="eyebrow-dot"></span>
         <span class="eyebrow">Free Website Audit · UK Small Businesses</span>
       </div>
       <h1>When someone Googles a business like yours, do they find you, or your <span class="teal">competitor</span>?</h1>
-      <p class="fa-hero-sub">Get a free website audit. No pitch, just a plan to get you found.</p>
+      <p class="fa-hero-sub">Getting found is simpler than it feels. A free website audit. No pitch, just a clear plan to get you found.</p>
       <div class="fa-hero-cta">
         <a href="#book" class="btn-primary large">Book my free audit</a>
+      </div>
+      <div class="fa-value-row" style="margin-top:1.5rem;">
+        <span class="fa-value-tag">Free, no obligation</span>
+        <span class="fa-value-tag">You keep the plan</span>
+        <span class="fa-value-tag">Takes under a minute</span>
       </div>
     </div>
   </section>
@@ -167,6 +183,7 @@
         <div class="section-label">No risk</div>
         <p class="fa-promise">No pitch. No hard sell. You keep the plan whether you work with us or not.</p>
         <p>And if you do decide to fix things, websites start from £175. You own it outright. No monthly agency fees, ever.</p>
+        <p style="margin-top:0.85rem;">You deal with the founder directly. No call centre, no account manager, just the person who builds it.</p>
         <div class="fa-value-row">
           <span class="fa-value-tag">Websites from £175</span>
           <span class="fa-value-tag">You own it</span>
@@ -201,7 +218,7 @@
     <div class="container">
       <div class="section-label">Book it</div>
       <h2 style="text-align:center;">Book your free audit.</h2>
-      <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;">Fill this in and we will send your plan back. It takes under a minute.</p>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;">No pitch, no obligation. You keep the plan either way. Fill this in and we will send it back, it takes under a minute.</p>
 
       <div class="fa-form-wrap">
         <!-- Lead form delivers straight to conversionforge.agency@gmail.com via FormSubmit (free, no account, activated once). -->
@@ -221,20 +238,12 @@
             <input type="text" id="business" name="business" required autocomplete="organization" />
           </div>
           <div class="fa-field">
-            <label for="link">Current website or social link <span class="fa-optional">(optional)</span></label>
-            <input type="text" id="link" name="website_or_social" inputmode="url" placeholder="e.g. yourbusiness.co.uk or your Instagram" />
-          </div>
-          <div class="fa-field">
-            <label for="frustration">What is your biggest frustration getting found online?</label>
+            <label for="frustration">What is holding you back from reaching more customers?</label>
             <textarea id="frustration" name="biggest_frustration" rows="4"></textarea>
           </div>
           <div class="fa-field">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required autocomplete="email" />
-          </div>
-          <div class="fa-field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" />
           </div>
 
           <button type="submit" class="btn-primary">Book my free audit</button>
@@ -278,5 +287,17 @@
   </footer>
 
   <script src="/cf-chat-widget.js" defer></script>
+  <style>
+    .fa-fade{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+    .fa-fade.fa-in{opacity:1;transform:none}
+  </style>
+  <script>
+  (function(){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('fa-in');io.unobserve(e.target);}});},{threshold:.15});
+    document.querySelectorAll('#audit .container, #no-risk .container, #proof .container, #offer .container').forEach(function(el){el.classList.add('fa-fade');io.observe(el);});
+    var num=document.querySelector('.fa-proof-num');
+    if(num){var done=false;var po=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!done){done=true;var t=28000,st=null;function tick(ts){if(!st)st=ts;var p=Math.min((ts-st)/1100,1);num.textContent=Math.floor(p*t).toLocaleString();if(p<1)requestAnimationFrame(tick);else num.textContent='28,000';}requestAnimationFrame(tick);}});},{threshold:.5});po.observe(num);}
+  })();
+  </script>
 </body>
 </html>
