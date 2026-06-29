@@ -46,6 +46,14 @@
   .cfw-note{font-size:11px;color:#8a9097;text-align:center;padding:0 12px 9px;background:#fff}\
   .cfw-note a{color:#6b7178}\
   .cfw-typing{font-size:13px;color:#8a9097;margin-bottom:10px}\
+  .cfw-badge{position:absolute;top:-3px;right:-3px;min-width:20px;height:20px;border-radius:10px;background:#ff4d4f;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 5px;box-shadow:0 1px 5px rgba(0,0,0,.35)}\
+  .cfw-teaser{position:fixed;right:20px;bottom:92px;z-index:2147483000;max-width:min(264px,calc(100vw - 40px));background:#fff;color:#1a1a1a;border-radius:14px;border-bottom-right-radius:5px;padding:12px 26px 12px 14px;box-shadow:0 12px 34px rgba(0,0,0,.22);font-size:14px;line-height:1.45;display:none;cursor:pointer}\
+  .cfw-teaser.cfw-show{display:block;animation:cfwpop .5s cubic-bezier(.16,1,.3,1)}\
+  .cfw-teaser b{display:block;font-size:11.5px;letter-spacing:.02em;color:#0b6b68;margin-bottom:3px}\
+  .cfw-tx{position:absolute;top:5px;right:9px;color:#a3a8ad;font-size:17px;line-height:1;cursor:pointer}\
+  @keyframes cfwpop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}\
+  @keyframes cfwbounce{0%,100%{transform:translateY(0)}28%{transform:translateY(-5px)}55%{transform:translateY(0)}80%{transform:translateY(-2px)}}\
+  .cfw-btn.cfw-bounce{animation:cfwbounce 1.3s ease 1}\
   ';
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
@@ -66,6 +74,7 @@
     var btn = el('button', 'cfw-btn'); btn.setAttribute('aria-label', 'Chat with Conversion Forge');
     // The actual Conversion Forge logo mark (teal mountain), framed for presence.
     btn.innerHTML = '<svg width="32" height="22" viewBox="6 9 20 14" fill="currentColor" aria-hidden="true"><path d="M8 22L13 10L16 17L19 13L24 22H8Z"/></svg>';
+    var badge = el('div', 'cfw-badge', '1'); btn.appendChild(badge);
     root.appendChild(btn);
 
     var panel = el('div', 'cfw-panel');
@@ -120,9 +129,30 @@
         .finally(function () { busy = false; sendBtn.disabled = false; input.focus(); });
     }
 
-    function open() { root.classList.add('cfw-open'); if (!body.dataset.init) { body.dataset.init = '1'; addBot(GREETING); addChips(); } input.focus(); }
+    function open() { root.classList.add('cfw-open'); hideTeaser(); clearBadge(); if (!body.dataset.init) { body.dataset.init = '1'; addBot(GREETING); addChips(); } input.focus(); }
     function close() { root.classList.remove('cfw-open'); }
     btn.onclick = function () { root.classList.contains('cfw-open') ? close() : open(); };
+
+    // ---- proactive teaser (Grok-guided): context-aware copy, once per session, dismissable, one soft bounce ----
+    var path = location.pathname;
+    var teaserText = /free-audit/.test(path) ? "Curious what's hiding you on Google? Ask me." :
+                     /methodolog/.test(path) ? "Questions on how we work? Ask me." :
+                     /cases/.test(path) ? "Want results like these? Ask me." :
+                     "Not sure where to start? Ask me.";
+    var teaser = el('div', 'cfw-teaser');
+    teaser.innerHTML = '<span class="cfw-tx">&times;</span><b>Conversion Forge assistant</b>' + esc(teaserText);
+    root.appendChild(teaser);
+    function clearBadge() { if (badge) badge.style.display = 'none'; }
+    function hideTeaser() { teaser.classList.remove('cfw-show'); }
+    teaser.onclick = function (e) { if (e.target && e.target.className === 'cfw-tx') { hideTeaser(); clearBadge(); e.stopPropagation(); return; } hideTeaser(); open(); };
+    try {
+      if (!sessionStorage.getItem('cfw_teased')) {
+        setTimeout(function () {
+          if (!root.classList.contains('cfw-open')) { teaser.classList.add('cfw-show'); btn.classList.add('cfw-bounce'); }
+          try { sessionStorage.setItem('cfw_teased', '1'); } catch (e) {}
+        }, 7000);
+      } else { clearBadge(); }
+    } catch (e) {}
     panel.querySelector('.cfw-x').onclick = close;
     sendBtn.onclick = function () { send(); };
     input.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } });
