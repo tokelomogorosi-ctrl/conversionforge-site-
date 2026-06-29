@@ -6,7 +6,7 @@
   var ENDPOINT = 'https://cf-chatbot.tmogorosi-mgmt.workers.dev/chat';
   var AUDIT = 'https://conversionforge.co.uk/free-audit';
   var WHATSAPP = 'https://wa.me/447881664892?text=Hi%20Conversion%20Forge%2C%20I%27d%20like%20to%20talk%20about%20a%20project.';
-  var GREETING = "Hi, I'm the Conversion Forge assistant. I can tell you how we get businesses found online, and point you to a free website audit. What are you working on?";
+  var GREETING = "Hi, I'm the Conversion Forge assistant. What's your business, and what do you want more of online?";
   var CHIPS = [
     { label: 'Get my free website audit', send: 'I would like a free website audit.' },
     { label: 'I want a bigger / bespoke project', send: 'I want something bigger than a starter site. What can you build?' },
