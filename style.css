@@ -791,3 +791,17 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
   .founder-block { grid-template-columns: 1fr; gap: 28px; }
   .founder-figure { max-width: 320px; }
 }
+
+/* ── Prose paragraph rhythm (29 Jul 2026) ──────────────────────────────────────
+   The global `*{margin:0}` reset stripped every <p> margin and nothing restored
+   it, so multi-paragraph prose ran together as one block on about/privacy/terms.
+   Scoped to prose containers so cards, heroes and grids are untouched. */
+.section-white .container > p,
+.founder-copy p,
+.legal-body p {
+  margin-bottom: 1.15em;
+  max-width: 68ch;
+}
+.section-white .container > p:last-child,
+.founder-copy p:last-child,
+.legal-body p:last-child { margin-bottom: 0; }
