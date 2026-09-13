@@ -591,7 +591,7 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 
 /* Page-hero variant when video is unavailable */
 .cases-hero { padding: 7rem 2rem 4rem; background: var(--white); }
-.cases-hero-inner { text-align: center; max-width: 720px; margin: 0 auto; }
+.cases-hero-inner { display: block; text-align: center; max-width: 720px; margin: 0 auto; } /* 13 Sep 2026: a centred single column; the two-column .hero-inner grid was splitting eyebrow, h1 and lead across cells on desktop */
 .cases-hero-inner .eyebrow-wrap { justify-content: center; }
 .cases-hero h1 {
   font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 900; letter-spacing: -0.03em;
@@ -805,3 +805,10 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 .section-white .container > p:last-child,
 .founder-copy p:last-child,
 .legal-body p:last-child { margin-bottom: 0; }
+
+/* 13 Sep 2026: hub pages (services/, locations/, work/) list their pages as headed cards, not bare blue links */
+.hub-list { max-width: 760px; }
+.hub-list h3 { margin: 1.8rem 0 0.35rem; font-size: 1.15rem; }
+.hub-list h3 a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--teal, #2dd4bf); }
+.hub-list h3 a:hover { color: var(--teal, #2dd4bf); }
+.hub-list p { margin-top: 0; }
