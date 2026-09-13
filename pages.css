@@ -1,0 +1,158 @@
+/* pages.css — service, area and case-study pages (13 Sep 2026). Scoped to body.cfp so the homepage and older pages are untouched.
+   Same tokens as style.css: Inter, --teal, --charcoal. One visual language: warm-dark photography with a single teal accent. */
+.cfp-sec a:not([class]), .cfp-faq a:not([class]) { color: var(--teal-dark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.cfp-sec a:not([class]):hover, .cfp-faq a:not([class]):hover { color: var(--charcoal); }
+
+/* HERO — split like the homepage: words left, a dark media card right */
+.cfp-hero { position: relative; padding: 7.5rem 2rem 4.5rem; background: radial-gradient(1200px 520px at 85% 10%, var(--teal-light), transparent 60%), var(--white); overflow: hidden; }
+.cfp-hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+.cfp-hero-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 3.5rem; align-items: center; }
+.cfp-hero h1 { font-size: clamp(2.1rem, 4.2vw, 3.4rem); line-height: 1.08; letter-spacing: -0.035em; font-weight: 900; color: var(--charcoal); margin: 0 0 1.25rem; text-wrap: balance; }
+.cfp-hero .hero-sub { font-size: 1.08rem; max-width: 520px; margin-bottom: 1.75rem; text-wrap: pretty; }
+.cfp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; }
+.cfp-textlink { font-weight: 600; font-size: 0.95rem; color: var(--charcoal); text-decoration: none; border-bottom: 2px solid var(--teal); padding: 0.35rem 0; min-height: 44px; display: inline-flex; align-items: center; }
+.cfp-textlink:hover { color: var(--teal-dark); }
+.cfp-textlink.on-dark { color: var(--white); }
+.cfp-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.75rem; padding: 0; list-style: none; }
+.cfp-chips li { font-size: 0.8rem; font-weight: 600; color: var(--text); background: var(--white); border: 1px solid var(--border); border-radius: 999px; padding: 0.35rem 0.8rem; }
+
+/* the media card: echoes the homepage 'What a week looks like' card */
+.cfp-card { position: relative; background: var(--charcoal); border-radius: 18px; padding: 0.7rem; box-shadow: 0 30px 80px -30px rgba(17,17,17,0.55); }
+.cfp-card-bar { display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.4rem 0.7rem; }
+.cfp-card-bar i { width: 9px; height: 9px; border-radius: 50%; background: #ff5f57; display: block; }
+.cfp-card-bar i:nth-child(2) { background: #febc2e; } .cfp-card-bar i:nth-child(3) { background: #28c840; }
+.cfp-card-bar span { margin-left: 0.5rem; font-size: 0.72rem; color: #9a9a9a; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cfp-media { position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 5 / 4; background: #0c0c0c; }
+.cfp-media img, .cfp-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cfp-media.kenburns img { transform-origin: 60% 55%; animation: cfp-kenburns 22s ease-out both; }
+@keyframes cfp-kenburns { from { transform: scale(1.12); } to { transform: scale(1.0); } }
+.cfp-card-foot { display: flex; align-items: center; gap: 0.5rem; padding: 0.7rem 0.5rem 0.2rem; font-size: 0.74rem; color: #9a9a9a; }
+.cfp-card-foot b { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 0 rgba(77,217,213,0.6); animation: cfp-pulse 2.4s ease-out infinite; }
+@keyframes cfp-pulse { 0% { box-shadow: 0 0 0 0 rgba(77,217,213,0.55); } 70% { box-shadow: 0 0 0 9px rgba(77,217,213,0); } 100% { box-shadow: 0 0 0 0 rgba(77,217,213,0); } }
+
+/* devices: the real client site on a laptop screen with a phone in front */
+.cfp-devices { position: relative; aspect-ratio: 5 / 4; }
+.cfp-devices .desk { position: absolute; left: 0; top: 11%; width: 92%; border-radius: 10px; overflow: hidden; border: 1px solid #2a2a2a; background: #0c0c0c; }
+.cfp-devices .desk img { width: 100%; height: auto; display: block; }
+.cfp-devices .phone { position: absolute; right: 2%; bottom: 0; width: 30%; aspect-ratio: 390 / 800; border-radius: 22px; overflow: hidden; border: 5px solid #050505; background: #050505; box-shadow: 0 24px 50px -18px rgba(0,0,0,0.8), 0 0 0 1px #2c2c2c; animation: cfp-float 7s ease-in-out infinite; }
+.cfp-devices .phone img, .cfp-devices .phone video { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.cfp-devices.reel { overflow: hidden; border-radius: 12px; background: #0c0c0c; }
+.cfp-devices.reel .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; transform: scale(1.15); }
+.cfp-devices.reel .phone { left: 50%; right: auto; width: 34%; transform: translateX(-50%); bottom: 2%; animation: cfp-float-c 7s ease-in-out infinite; }
+@keyframes cfp-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes cfp-float-c { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, -10px); } }
+
+/* STATS — the homepage 'Proof' band, count-up on view */
+.cfp-stats { background: var(--charcoal-2); padding: 3.5rem 2rem; }
+.cfp-stats-grid { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.cfp-stat .n { font-size: clamp(2.2rem, 4.6vw, 3.6rem); font-weight: 900; color: var(--teal); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.cfp-stat .l { margin-top: 0.6rem; font-size: 0.92rem; color: #a8a8a8; max-width: 26ch; }
+
+/* BODY SECTIONS — numbered, alternating grounds, tighter rhythm */
+.cfp-sec { padding: 4.75rem 2rem; background: var(--white); }
+.cfp-sec.alt { background: var(--teal-light); }
+.cfp-sec-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 160px minmax(0, 720px); gap: 2.5rem; }
+.cfp-idx { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; color: var(--teal-dark); padding-top: 0.55rem; border-top: 2px solid var(--teal); align-self: start; }
+.cfp-sec h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 1.1rem; text-wrap: balance; }
+.cfp-sec p { font-size: 1.04rem; line-height: 1.72; color: var(--text); margin: 0 0 1rem; max-width: 66ch; }
+.cfp-sec .lead { font-size: 1.2rem; line-height: 1.6; color: var(--charcoal); }
+
+/* SHOWCASE — dark band holding the live site, for case studies */
+.cfp-show { background: var(--charcoal); padding: 5rem 2rem; color: #d8d8d8; }
+.cfp-show-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 3.5rem; align-items: center; }
+.cfp-show h2 { color: var(--white); font-size: clamp(1.7rem, 3vw, 2.4rem); letter-spacing: -0.03em; margin: 0 0 1rem; }
+.cfp-show p { color: #bdbdbd; font-size: 1.02rem; line-height: 1.7; }
+
+/* WHERE THE WORK GOES — distances from Sevenoaks, a line drawn on view */
+.cfp-routes { background: var(--charcoal-2); padding: 5rem 2rem; color: #cfcfcf; overflow: hidden; }
+.cfp-routes-inner { max-width: 1140px; margin: 0 auto; }
+.cfp-routes h2 { color: var(--white); font-size: clamp(1.7rem, 3vw, 2.4rem); letter-spacing: -0.03em; margin: 0 0 0.6rem; }
+.cfp-routes .sub { color: #a8a8a8; max-width: 60ch; margin: 0 0 2.5rem; }
+.cfp-route-track { position: relative; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.75rem; }
+.cfp-route-line { position: absolute; left: 0; right: 0; top: 13px; height: 2px; background: linear-gradient(90deg, var(--teal), rgba(77,217,213,0.15)); transform-origin: left; transform: scaleX(0); transition: transform 1.6s cubic-bezier(.2,.7,.2,1); }
+.cfp-routes.is-visible .cfp-route-line { transform: scaleX(1); }
+.cfp-stop { position: relative; padding-top: 2.2rem; opacity: 0; transform: translateY(12px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.cfp-routes.is-visible .cfp-stop { opacity: 1; transform: none; }
+.cfp-stop::before { content: ""; position: absolute; left: 0; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: var(--charcoal-2); border: 2px solid var(--teal); }
+.cfp-stop.home::before { background: var(--teal); animation: cfp-pulse 2.4s ease-out infinite; }
+.cfp-stop .d { font-size: 1.35rem; font-weight: 800; color: var(--white); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.cfp-stop .p { font-size: 0.88rem; font-weight: 600; color: var(--teal); margin-top: 0.2rem; }
+.cfp-stop .w { font-size: 0.82rem; color: #9c9c9c; margin-top: 0.35rem; line-height: 1.45; }
+
+/* FAQ — accordion */
+.cfp-faq { padding: 4.75rem 2rem; background: var(--white); }
+.cfp-faq-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 160px minmax(0, 820px); gap: 2.5rem; }
+.cfp-faq details { border-bottom: 1px solid var(--border); }
+.cfp-faq details:first-of-type { border-top: 1px solid var(--border); }
+.cfp-faq summary { list-style: none; cursor: pointer; padding: 1.15rem 2.5rem 1.15rem 0; position: relative; font-weight: 650; font-size: 1.05rem; color: var(--charcoal); min-height: 44px; }
+.cfp-faq summary::-webkit-details-marker { display: none; }
+.cfp-faq summary::after { content: ""; position: absolute; right: 0.4rem; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: linear-gradient(var(--teal-dark), var(--teal-dark)) center / 14px 2px no-repeat, linear-gradient(var(--teal-dark), var(--teal-dark)) center / 2px 14px no-repeat; transition: transform 0.25s ease-out; }
+.cfp-faq details[open] summary::after { transform: rotate(45deg); }
+.cfp-faq summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; border-radius: 4px; }
+.cfp-faq details p { margin: 0 0 1.2rem; color: var(--text); line-height: 1.7; max-width: 70ch; }
+
+/* RELATED — cards are links, so cards earn their place */
+.cfp-related { padding: 4.75rem 2rem; background: var(--light); }
+.cfp-related-inner { max-width: 1140px; margin: 0 auto; }
+.cfp-related h2 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); letter-spacing: -0.03em; margin: 0.4rem 0 2rem; }
+.cfp-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.cfp-cards.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cfp-cards.two .cfp-cardlink .ph { aspect-ratio: 16 / 8; }
+.cfp-cardlink { display: block; background: var(--white); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; text-decoration: none; color: var(--charcoal); transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, border-color 0.25s ease-out; }
+.cfp-cardlink:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--teal); }
+.cfp-cardlink:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.cfp-cardlink .ph { aspect-ratio: 16 / 10; overflow: hidden; background: #111; }
+.cfp-cardlink .ph img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform 0.6s ease-out; }
+.cfp-cardlink:hover .ph img { transform: scale(1.04); }
+.cfp-cardlink .tx { padding: 1rem 1.1rem 1.2rem; }
+.cfp-cardlink .k { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-dark); }
+.cfp-cardlink .t { font-weight: 700; font-size: 1rem; line-height: 1.35; margin-top: 0.35rem; }
+
+/* CTA — the homepage 'Book your free strategy call' band */
+.cfp-cta { background: var(--charcoal-2); padding: 5rem 2rem; }
+.cfp-cta-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 3rem; align-items: center; }
+.cfp-cta h2 { color: var(--white); font-size: clamp(1.8rem, 3.4vw, 2.7rem); letter-spacing: -0.03em; line-height: 1.12; margin: 0 0 1rem; }
+.cfp-cta p { color: #b8b8b8; font-size: 1.02rem; max-width: 52ch; margin: 0 0 1.75rem; }
+.cfp-cta ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.7rem; }
+.cfp-cta li { color: #d0d0d0; font-size: 0.95rem; padding-left: 1.6rem; position: relative; }
+.cfp-cta li::before { content: ""; position: absolute; left: 0; top: 0.45rem; width: 10px; height: 6px; border-left: 2px solid var(--teal); border-bottom: 2px solid var(--teal); transform: rotate(-45deg); }
+
+/* HUB grid + marquee */
+.cfp-hubgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+.cfp-marquee { overflow: hidden; border-radius: 12px; aspect-ratio: 5 / 4; background: #0c0c0c; display: flex; flex-direction: column; justify-content: center; gap: 0.7rem; }
+.cfp-marquee-row { display: flex; gap: 0.7rem; width: max-content; animation: cfp-marquee 38s linear infinite; }
+.cfp-marquee-row.rev { animation-direction: reverse; animation-duration: 44s; }
+.cfp-marquee-row img { width: 240px; height: 150px; object-fit: cover; object-position: top; border-radius: 8px; display: block; }
+@keyframes cfp-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* hero entrance: movement only, visible from the first frame so the largest paint is never held back */
+.cfp-rise { animation: cfp-rise 0.8s cubic-bezier(.2,.7,.2,1) both; }
+.cfp-rise.d1 { animation-delay: 0.12s; }
+@keyframes cfp-rise { from { transform: translateY(18px); } to { transform: none; } }
+/* reveal — the homepage's motion, shared */
+html.js .cfp .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+html.js .cfp .reveal.is-visible { opacity: 1; transform: none; }
+html.js .cfp .reveal.d1 { transition-delay: 0.08s; } html.js .cfp .reveal.d2 { transition-delay: 0.16s; } html.js .cfp .reveal.d3 { transition-delay: 0.24s; }
+
+@media (max-width: 960px) {
+  .cfp-hero { padding: 6.5rem 1.25rem 3rem; }
+  .cfp-hero-inner, .cfp-show-inner, .cfp-cta-inner { grid-template-columns: minmax(0, 1fr); gap: 2.25rem; }
+  .cfp-sec, .cfp-faq, .cfp-related, .cfp-show, .cfp-routes, .cfp-cta { padding: 3.25rem 1.25rem; }
+  .cfp-stats { padding: 2.5rem 1.25rem; }
+  .cfp-sec-inner, .cfp-faq-inner { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .cfp-idx { width: 64px; }
+  .cfp-stats-grid { grid-template-columns: minmax(0, 1fr); gap: 1.4rem; }
+  .cfp-cards, .cfp-cards.two, .cfp-hubgrid { grid-template-columns: minmax(0, 1fr); }
+  .cfp-sec .lead { font-size: 1.1rem; }
+  .cfp-route-track { grid-template-columns: minmax(0, 1fr); gap: 0; padding-left: 1.6rem; }
+  .cfp-route-line { left: 6px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; transform: scaleY(0); transform-origin: top; background: linear-gradient(180deg, var(--teal), rgba(77,217,213,0.15)); }
+  .cfp-routes.is-visible .cfp-route-line { transform: scaleY(1); }
+  .cfp-stop { padding: 0 0 1.4rem 0.4rem; }
+  .cfp-stop::before { left: -1.6rem; top: 0.35rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cfp-rise, .cfp-media.kenburns img, .cfp-card-foot b, .cfp-devices .phone, .cfp-marquee-row, .cfp-stop.home::before { animation: none !important; }
+  .cfp-devices.reel .phone { transform: translateX(-50%); }
+  html.js .cfp .reveal, .cfp-stop { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .cfp-route-line { transform: none !important; transition: none !important; }
+}
