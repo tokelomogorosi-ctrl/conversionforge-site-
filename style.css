@@ -812,3 +812,34 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 .hub-list h3 a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--teal, #2dd4bf); }
 .hub-list h3 a:hover { color: var(--teal, #2dd4bf); }
 .hub-list p { margin-top: 0; }
+
+/* ---- 14 Sep 2026 · contrast (design audit G6, measured by probe before and after) ----
+   The brand teal #4DD9D5 stays for fills, icons and text on dark backgrounds (10:1 and above).
+   Text on light backgrounds uses --teal-ink #0F766E (5.47:1 on white, 5.33:1 on #F0FFFE).
+   "html body" lifts specificity above single-class rules in page <style> blocks and pages.css. */
+:root { --teal-ink: #0F766E; }
+html body .eyebrow, html body .section-label, html body .teal, html body .teal-underline, html body .teal-highlight,
+html body .step-num, html body .ladder-num, html body .ladder-cta, html body .service-tag, html body .case-badge,
+html body .case-split-text h4, html body .legal-page .kicker, html body .fa-value-tag, html body .fa-mailto,
+html body .quote-mark, html body .nav-links a:hover, html body .legal-page a,
+html body .cfp-sec a:not([class]), html body .cfp-faq a:not([class]), html body .cfp-idx, html body .cfp-cardlink .k,
+html body .cfp-textlink:hover { color: var(--teal-ink); }
+/* dark backgrounds keep the bright brand teal */
+html body footer .teal, html body footer a, html body .section-dark .eyebrow, html body .section-dark .section-label, html body .section-dark .teal,
+html body .section-dark .teal-highlight, html body .section-dark .teal-underline, html body .section-dark .quote-mark,
+html body .section-navy .eyebrow, html body .section-navy .section-label, html body .section-navy .teal, html body .section-navy .teal-highlight,
+html body .m-hero .eyebrow, html body .m-hero .teal, html body .m-hero .teal-highlight,
+html body .cases-video-hero .eyebrow, html body .cases-video-hero .teal, html body .cases-video-hero .teal-highlight,
+html body .hero-card .teal, html body .hero-card .section-label, html body .hero-card .pipe-status,
+html body .fa-hero-video .eyebrow, html body .fa-hero-video .teal, html body .fa-hero-video .teal-highlight, html body .fa-hero-video .section-label,
+html body .cfp-cta .section-label, html body .cfp-routes .section-label, html body .cfp-stats .section-label, html body .cfp-textlink.on-dark:hover,
+html body .section-label.light { color: var(--teal); }
+/* footer and dark-card small text: readable grey on #1A1A1A (6.19:1) */
+html body footer .footer-copy, html body footer .footer-links a, html body .hero-card .card-title, html body .hero-card .card-footer span { color: #9A9A9A; }
+html body footer .footer-links a:hover, html body footer .footer-copy a { color: var(--teal); }
+/* About, Cases and Methodology: headings styled white inside WHITE sections were invisible (design audit G1) */
+html body .section-white .white-h2, html body .section-light .white-h2, html body .section-teal-light .white-h2 { color: var(--charcoal); }
+/* two-class rules that outrank the block above (found by re-measuring after the first pass) */
+html body .cases-hero h1 .teal-highlight, html body .case-badge.teal-badge { color: var(--teal-ink); }
+html body .m-hero h1 .teal-highlight { color: var(--teal); }
+html body .cta-card-meta span, html body .section-dark .quote-author span { color: #9A9A9A; }

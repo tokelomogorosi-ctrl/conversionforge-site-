@@ -127,14 +127,8 @@
   <meta name="twitter:image" content="https://conversionforge.co.uk/media/og/conversion-forge-og-1200x630.png" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": ["ProfessionalService", "LocalBusiness"], "@id": "https://conversionforge.co.uk/#business", "name": "Conversion Forge", "url": "https://conversionforge.co.uk/", "logo": "https://conversionforge.co.uk/logo.png", "image": "https://conversionforge.co.uk/media/og/conversion-forge-og-1200x630.png", "email": "hello@weareconversionforge.uk", "description": "Web design, local search (SEO and AI-search visibility) and lead generation for small businesses in Sevenoaks and across Kent.", "address": {"@type": "PostalAddress", "addressLocality": "Sevenoaks", "addressRegion": "Kent", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Sevenoaks"}, {"@type": "City", "name": "Tonbridge"}, {"@type": "City", "name": "Tunbridge Wells"}, {"@type": "City", "name": "Bromley"}, {"@type": "AdministrativeArea", "name": "Kent"}, {"@type": "Country", "name": "United Kingdom"}], "founder": {"@type": "Person", "name": "Tk", "jobTitle": "Founder"}, "sameAs": ["https://www.facebook.com/people/Conversion-Forge/61587717514082/"], "knowsAbout": ["Web design for small businesses", "Local SEO", "Google Business Profile", "AI search visibility", "Lead generation", "Meta ads management"]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://conversionforge.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Free website audit", "item": "https://conversionforge.co.uk/free-audit"}]}</script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH2KGWG5MH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WH2KGWG5MH');
-  </script>
+  <!-- Google Analytics loads only after the visitor agrees (consent.js, 14 Sep 2026) -->
+  <script src="/consent.js" defer></script>
 </head>
 <body>
 
@@ -232,7 +226,7 @@
   <section class="section-white" id="offer" style="padding:2.5rem 1.25rem;">
     <div class="container" style="max-width:640px;margin:0 auto;text-align:center;">
       <p style="font-size:1.15rem;line-height:1.65;">
-        The audit is free, with no obligation. If you want us to fix what it finds, we build you a website you <strong>own</strong> and have you <strong style="color:var(--teal);">live in under 72 hours</strong>, from <strong>£175</strong>. No monthly fees.
+        The audit is free, with no obligation. If you want us to fix what it finds, we build you a website you <strong>own</strong> and have you <strong style="color:var(--teal-ink);">live in under 72 hours</strong>, from <strong>£175</strong>. No monthly fees.
       </p>
     </div>
   </section>
@@ -250,6 +244,7 @@
           <input type="hidden" name="_subject" value="New free audit request from conversionforge.co.uk/free-audit" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://conversionforge.co.uk/free-audit/thanks" />
           <!-- Honeypot spam trap. Bots fill it, people do not. FormSubmit drops anything with _honey filled. -->
           <input type="text" name="_honey" class="fa-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
