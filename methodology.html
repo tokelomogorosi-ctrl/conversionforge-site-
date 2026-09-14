@@ -114,9 +114,7 @@
 
   <!-- PAGE HERO -->
   <section class="hero cases-hero m-hero">
-    <video class="m-hero-bg" autoplay muted loop playsinline preload="none" poster="media/methodology/architecture.webp">
-      <source src="media/methodology/hero-loop.mp4" type="video/mp4" />
-    </video>
+    <video class="m-hero-bg" muted loop playsinline preload="none" poster="media/methodology/architecture.webp" data-src-wide="media/methodology/hero-loop.mp4" aria-hidden="true"></video>
     <div class="m-hero-veil"></div>
     <div class="hero-inner cases-hero-inner">
       <div class="eyebrow-wrap">
@@ -285,5 +283,9 @@
 
   <script src="/cf-chat-widget.js" defer></script>
   <script src="/nav-mobile.js" defer></script>
+
+<script>/* 14 Sep 2026: the background film loads only on screens 900px and wider, and never on Save-Data, 2G or reduced motion; phones keep the poster image */
+(function(){var v=document.querySelectorAll("video[data-src-wide]");if(!v.length)return;var c=navigator.connection||{};var ok=window.matchMedia("(min-width: 900px)").matches&&!c.saveData&&!/2g$/.test(c.effectiveType||"")&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!ok)return;v.forEach(function(el){el.src=el.getAttribute("data-src-wide");el.muted=true;var p=el.play();if(p&&p.catch)p.catch(function(){});});})();
+</script>
 </body>
 </html>

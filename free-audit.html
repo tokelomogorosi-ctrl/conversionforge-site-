@@ -147,7 +147,7 @@
 
   <!-- HERO -->
   <section class="fa-hero fa-hero-video">
-    <video class="fa-hero-bg" autoplay muted loop playsinline preload="auto" poster="media/methodology/architecture.webp"><source src="media/methodology/hero-loop.mp4" type="video/mp4" /></video>
+    <video class="fa-hero-bg" muted loop playsinline preload="none" poster="media/methodology/architecture.webp" data-src-wide="media/methodology/hero-loop.mp4" aria-hidden="true"></video>
     <div class="fa-hero-veil"></div>
     <div class="fa-hero-inner">
       <div class="eyebrow-wrap">
@@ -321,5 +321,9 @@
     if(num){var done=false;var po=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!done){done=true;var t=28000,st=null;function tick(ts){if(!st)st=ts;var p=Math.min((ts-st)/1100,1);num.textContent=Math.floor(p*t).toLocaleString();if(p<1)requestAnimationFrame(tick);else num.textContent='28,000';}requestAnimationFrame(tick);}});},{threshold:.5});po.observe(num);}
   })();
   </script>
+
+<script>/* 14 Sep 2026: the background film loads only on screens 900px and wider, and never on Save-Data, 2G or reduced motion; phones keep the poster image */
+(function(){var v=document.querySelectorAll("video[data-src-wide]");if(!v.length)return;var c=navigator.connection||{};var ok=window.matchMedia("(min-width: 900px)").matches&&!c.saveData&&!/2g$/.test(c.effectiveType||"")&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!ok)return;v.forEach(function(el){el.src=el.getAttribute("data-src-wide");el.muted=true;var p=el.play();if(p&&p.catch)p.catch(function(){});});})();
+</script>
 </body>
 </html>

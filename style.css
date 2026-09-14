@@ -843,3 +843,5 @@ html body .section-white .white-h2, html body .section-light .white-h2, html bod
 html body .cases-hero h1 .teal-highlight, html body .case-badge.teal-badge { color: var(--teal-ink); }
 html body .m-hero h1 .teal-highlight { color: var(--teal); }
 html body .cta-card-meta span, html body .section-dark .quote-author span { color: #9A9A9A; }
+/* 14 Sep 2026: on phones the trust label may wrap instead of forcing a sideways scroll (design audit G11) */
+@media (max-width: 480px) { html body .trust-label { white-space: normal; } }
