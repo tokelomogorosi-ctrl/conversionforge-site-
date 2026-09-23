@@ -70,10 +70,10 @@
     var style = el('style'); style.textContent = css; document.head.appendChild(style);
     var root = el('div', 'cfw'); document.body.appendChild(root);
 
-    var logo = '<svg width="22" height="22" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="' + TEAL + '"/><path d="M8 22L13 10L16 17L19 13L24 22H8Z" fill="' + INK + '"/></svg>';
+    var logo = '<img src="/media/brand/cf-mark-small.svg" width="24" height="24" alt="">';
     var btn = el('button', 'cfw-btn'); btn.setAttribute('aria-label', 'Chat with Conversion Forge');
-    // The actual Conversion Forge logo mark (teal mountain), framed for presence.
-    btn.innerHTML = '<svg width="32" height="22" viewBox="6 9 20 14" fill="currentColor" aria-hidden="true"><path d="M8 22L13 10L16 17L19 13L24 22H8Z"/></svg>';
+    // The Conversion Forge anvil mark (redrawn 23 Sep 2026), framed for presence.
+    btn.innerHTML = '<img src="/media/brand/cf-mark-small.svg" width="38" height="38" alt="" aria-hidden="true">';
     var badge = el('div', 'cfw-badge', '1'); btn.appendChild(badge);
     root.appendChild(btn);
 

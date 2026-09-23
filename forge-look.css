@@ -1,0 +1,60 @@
+/* FORGE LOOK — 23 Sep 2026 (Director go: anvil mark, card font, forge imagery, colour reassessment).
+   Homepage only. The hero goes dark over the rune-circle forge stone, a rune ring turns slowly behind the
+   phones, teal stays the one electric accent. Dark sections carry the gunmetal circuit texture.
+   Revert: remove this file's <link> from index.html. */
+
+/* ---------- hero: dark forge ---------- */
+html body .hero{position:relative;overflow:hidden;background:#0a0c0d url(/media/brand/forge-hero-wide.webp) 72% 50%/cover no-repeat}
+html body .hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(10,12,13,.96) 0%,rgba(10,12,13,.86) 38%,rgba(10,12,13,.35) 70%,rgba(10,12,13,.55) 100%)}
+html body .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+html body .hero .hero-inner{position:relative;z-index:1}
+html body .hero h1{color:#fff}
+html body .hero .teal-underline{color:#4DD9D5}
+html body .hero .eyebrow{color:#4DD9D5}
+html body .hero .hero-sub{color:#b9c5c5}
+html body .hero .hero-pills li{color:#bff5f3;background:rgba(77,217,213,.1);border-color:rgba(77,217,213,.35)}
+html body .hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.04)}
+html body .hero .btn-ghost:hover{border-color:#4DD9D5;color:#4DD9D5}
+html body .hero .hero-trust{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)}
+html body .hero .hero-trust strong{color:#fff}
+html body .hero .hero-trust span{color:#9aa6a6}
+html body .hero .trust-divider{background:rgba(255,255,255,.12)}
+html body .hero .hero-founder p{color:#b9c5c5}
+html body .hero .hero-founder strong{color:#fff}
+html body .hero .proof-cap{color:#9aa6a6}
+html body .hero .proof-cap a{color:#4DD9D5}
+
+/* the turning rune ring behind the phones */
+.proof-ring{position:absolute;left:50%;top:44%;width:560px;height:560px;margin:-280px 0 0 -280px;opacity:.28;
+  pointer-events:none;animation:ring-turn 140s linear infinite;filter:drop-shadow(0 0 12px rgba(77,217,213,.55))}
+@keyframes ring-turn{to{transform:rotate(360deg)}}
+.proof .phone{box-shadow:0 30px 70px -20px rgba(0,0,0,.8),0 0 0 1px rgba(77,217,213,.18) inset}
+
+@media (max-width:768px){
+  html body .hero{background-image:url(/media/brand/forge-hero-tall.webp);background-position:50% 100%}
+  html body .hero::before{background:linear-gradient(180deg,rgba(10,12,13,.95) 0%,rgba(10,12,13,.82) 55%,rgba(10,12,13,.55) 100%)}
+  .proof-ring{width:360px;height:360px;margin:-180px 0 0 -180px}
+}
+@media (prefers-reduced-motion:reduce){.proof-ring{animation:none}}
+
+/* ---------- dark sections: gunmetal circuit texture ---------- */
+html body #results.section-dark,html body #contact.section-dark{
+  background:#111315 linear-gradient(rgba(17,19,21,.82),rgba(17,19,21,.9)),url(/media/brand/forge-texture.webp) center/cover}
+html body #contact.section-dark{background-image:linear-gradient(rgba(17,19,21,.86),rgba(17,19,21,.92)),url(/media/brand/forge-texture.webp)}
+
+/* ---------- "How I work" — the manifesto, in the site's voice ---------- */
+.method{position:relative;background:#0c0e0f;color:#e9eeee;padding:6rem 2rem;overflow:hidden}
+.method::before{content:"";position:absolute;inset:0;background:url(/media/brand/forge-tamahagane.webp) 70% 50%/cover;opacity:.32}
+.method::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0c0e0f 20%,rgba(12,14,15,.7) 60%,rgba(12,14,15,.35))}
+.method .container{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.method h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.12;margin:.6rem 0 2rem;max-width:22ch}
+.method ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 2rem;counter-reset:m}
+.method li{counter-increment:m;border-top:1px solid rgba(77,217,213,.35);padding-top:.9rem}
+.method li::before{content:"0" counter(m);font-family:'IBM Plex Mono',ui-monospace,monospace;color:#4DD9D5;font-size:.8rem;letter-spacing:.1em;display:block;margin-bottom:.4rem}
+.method li strong{display:block;color:#fff;font-size:1.05rem;margin-bottom:.3rem}
+.method li span{color:#aab6b6;font-size:.95rem;line-height:1.5}
+.method figure{margin:0}
+.method figure img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 30px 70px -25px rgba(0,0,0,.9),0 0 0 1px rgba(77,217,213,.2)}
+@media (max-width:860px){.method .container{grid-template-columns:1fr}.method ol{grid-template-columns:1fr}.method{padding:4rem 1.2rem}}
