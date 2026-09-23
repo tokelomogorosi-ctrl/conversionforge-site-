@@ -30,14 +30,14 @@
   }, true);
   function banner() {
     if (document.getElementById('cf-consent')) return;
-    var css = '#cf-consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;max-width:560px;margin:0 auto;background:#1A1A1A;color:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 12px 40px rgba(0,0,0,.35);font:15px/1.5 Inter,system-ui,sans-serif}'
-      + '#cf-consent p{margin:0 0 12px}#cf-consent a{color:#4DD9D5}#cf-consent .row{display:flex;gap:10px;flex-wrap:wrap}'
-      + '#cf-consent button{flex:1 1 150px;min-height:44px;border-radius:10px;font:600 15px Inter,system-ui,sans-serif;cursor:pointer}'
+    var css = '#cf-consent{position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:320px;background:#1A1A1A;color:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 8px 24px rgba(0,0,0,.3);font:14px/1.45 Inter,system-ui,sans-serif}@media(max-width:480px){#cf-consent{right:88px;max-width:none}}'
+      + '#cf-consent p{margin:0 0 10px}#cf-consent a{color:#4DD9D5}#cf-consent .row{display:flex;gap:10px;flex-wrap:wrap}'
+      + '#cf-consent button{flex:1 1 110px;min-height:44px;border-radius:10px;font:600 14px Inter,system-ui,sans-serif;cursor:pointer}'
       + '#cf-consent .yes{background:#4DD9D5;color:#1A1A1A;border:2px solid #4DD9D5}#cf-consent .no{background:transparent;color:#fff;border:2px solid #9A9A9A}'
       + '#cf-consent button:focus-visible{outline:3px solid #fff;outline-offset:2px}';
     var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
     var d = document.createElement('div'); d.id = 'cf-consent'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Analytics choice');
-    d.innerHTML = '<p>Can I count your visit? I use Google Analytics to see which pages help people. Nothing is loaded unless you say yes. <a href="/privacy.html#cookies">Details</a></p>'
+    d.innerHTML = '<p>Can I count your visit? Google Analytics only loads if you say yes. <a href="/privacy.html#cookies">Details</a></p>'
       + '<div class="row"><button type="button" class="yes">Yes, count it</button><button type="button" class="no">No thanks</button></div>';
     d.querySelector('.yes').addEventListener('click', function () { remember('granted'); d.remove(); load(); });
     d.querySelector('.no').addEventListener('click', function () { remember('denied'); d.remove(); });

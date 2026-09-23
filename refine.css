@@ -1,0 +1,55 @@
+/* refine.css — design clean-up from James Zwadlo's review (23 Sep 2026), approved by Tk.
+   Loaded last on index.html and about.html. Each block names the problem it fixes, so any one
+   can be removed on its own. The forge theme, Forge Lane and the client logo strip are
+   deliberately left alone (Director's call). */
+
+/* 1. One off-white. The mint (#f0fffe) and the grey (#f8f8f8) were two near-whites side by side. */
+:root { --teal-light: #f8f8f8; }
+
+/* 2. "silent execution" keeps its teal but loses the underline bar, which read as a link. */
+html body .teal-underline::after { content: none; }
+
+/* 3. The three hero points as one quiet line, not bubbles. This clears the pill that sat on the CTA button. */
+html body .hero .hero-points { margin: 1rem 0 1.75rem; font-size: .875rem; font-weight: 500; color: #9fb3b3; max-width: 520px; text-wrap: balance; }
+
+/* 4. The rune ring behind the hero recedes so the words can breathe. The forge image stays. */
+html body .hero::before {
+  background: linear-gradient(90deg, rgba(10,12,13,.97) 0%, rgba(10,12,13,.9) 42%, rgba(10,12,13,.68) 72%, rgba(10,12,13,.78) 100%);
+}
+
+/* 5. No teal glows on cards. Plain depth only. */
+html body .card-face.card-back { box-shadow: var(--shadow); }
+html body .hero-card:hover { box-shadow: var(--shadow-lg); }
+
+/* 6. One type scale: 12 / 14 / 16 / 18 / 20, then the headline sizes. (Was 21 sizes on the homepage.) */
+html body .service-tag, html body .featured-badge, html body .lt-eyebrow,
+html body .eyebrow, html body .ladder-eg, html body .footer-copy, html body .footer-line,
+html body .section-label, html body .ladder-num, html body .ladder-cta, html body .flip-hint { font-size: .75rem; }
+
+html body .btn-nav, html body .proof-cap, html body .quote-avatar, html body .ladder-footnote,
+html body .price-header p, html body .cta-card-meta span, html body .card-face h4,
+html body .nav-links a, html body .step-card p, html body .stat-label, html body figcaption,
+html body .service-card p, html body .ladder-card p, html body .price-features li,
+html body .cta-promises li, html body .cta-or, html body .cta-card p, html body .footer-links a { font-size: .875rem; }
+
+html body .btn-primary, html body .btn-ghost, html body .btn-outline,
+html body .hero-founder p, html body .card-face p { font-size: 1rem; }
+
+html body .card-face h3, html body .section-sub, html body .ladder-card h3,
+html body .hero-sub, html body .quote-text, html body .container h3, html body .price-header h3 { font-size: 1.125rem; }
+
+html body blockquote, html body .cta-card h4 { font-size: 1.25rem; }
+
+html body .lt-title { font-size: 2.8rem; }
+
+/* 6b. Rules that out-ranked the scale above. */
+html body nav .nav-links a.btn-nav { font-size: .875rem; }
+html body footer .footer-line { font-size: .75rem; }
+html body .tk-badge figcaption { font-size: .875rem; }
+html body .where-list li { font-size: 1rem; }
+html body .where-list a { font-size: .75rem; }
+html body nav .nav-links a.btn-nav { font-size: .875rem !important; } /* style.css sets .85rem !important */
+html body .method ol li strong { font-size: 1.125rem; }
+html body .method ol li span { font-size: 1rem; }
+html body .quote-author strong { font-size: .875rem; }
+html body .quote-author span { font-size: .75rem; }
