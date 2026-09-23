@@ -23,6 +23,10 @@
     background:' + INK + ';color:' + TEAL + ';border:none;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.28);\
     display:flex;align-items:center;justify-content:center;transition:transform .15s}\
   .cfw-btn:hover{transform:scale(1.06)}\
+  .cfw-btn .cfw-mark{position:relative;z-index:1;display:block}\
+  .cfw-btn .cfw-ring{position:absolute;inset:3px;width:54px;height:54px;opacity:.75;animation:cfwturn 24s linear infinite;pointer-events:none}\
+  @keyframes cfwturn{to{transform:rotate(360deg)}}\
+  @media (prefers-reduced-motion:reduce){.cfw-btn .cfw-ring{animation:none}}\
   .cfw-panel{position:fixed;right:20px;bottom:92px;z-index:2147483000;width:370px;max-width:calc(100vw - 32px);\
     height:560px;max-height:calc(100vh - 120px);background:#fff;border-radius:16px;overflow:hidden;display:none;\
     flex-direction:column;box-shadow:0 16px 48px rgba(0,0,0,.32);font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}\
@@ -70,10 +74,11 @@
     var style = el('style'); style.textContent = css; document.head.appendChild(style);
     var root = el('div', 'cfw'); document.body.appendChild(root);
 
-    var logo = '<img src="/media/brand/cf-mark-small.svg" width="24" height="24" alt="">';
+    var logo = '<img src="/media/brand/cf-mark-teal-128.png" width="28" height="28" alt="">';
     var btn = el('button', 'cfw-btn'); btn.setAttribute('aria-label', 'Chat with Conversion Forge');
-    // The Conversion Forge anvil mark (redrawn 23 Sep 2026), framed for presence.
-    btn.innerHTML = '<img src="/media/brand/cf-mark-small.svg" width="38" height="38" alt="" aria-hidden="true">';
+    // The site's teal anvil mark inside the same turning rune ring as the homepage hero (23 Sep 2026).
+    btn.innerHTML = '<img class="cfw-ring" src="/media/brand/cf-ring.svg" width="54" height="54" alt="" aria-hidden="true">'
+      + '<img class="cfw-mark" src="/media/brand/cf-mark-teal-128.png" width="42" height="42" alt="" aria-hidden="true">';
     var badge = el('div', 'cfw-badge', '1'); btn.appendChild(badge);
     root.appendChild(btn);
 
