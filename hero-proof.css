@@ -81,3 +81,17 @@
   .lane-teaser-inner::after{background:linear-gradient(0deg,rgba(13,15,16,.95) 0%,rgba(13,15,16,.4) 60%,rgba(13,15,16,.1) 100%)}
   .lt-text{top:auto;bottom:1.5rem;transform:none}
 }
+
+/* 23 Sep pm: client cards as a moving strip (static grid when motion is reduced) */
+.client-cards{display:block;overflow:hidden;min-width:0;width:100%;max-width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.cc-track{display:flex;gap:.75rem;width:max-content;animation:cc-move 45s linear infinite}
+.cc-copy{display:flex;gap:.75rem}
+.cc-track .client-card{flex:0 0 190px}
+.client-cards:hover .cc-track,.client-cards:focus-within .cc-track{animation-play-state:paused}
+@keyframes cc-move{from{transform:translateX(0)}to{transform:translateX(calc(-50% - .375rem))}}
+@media (max-width:480px){.cc-track .client-card{flex-basis:150px}.cc-track{animation-duration:35s}}
+@media (prefers-reduced-motion:reduce){
+  .client-cards{-webkit-mask-image:none;mask-image:none}
+  .cc-track{animation:none;width:auto;flex-wrap:wrap;justify-content:center}
+  .cc-copy{display:none}
+}
