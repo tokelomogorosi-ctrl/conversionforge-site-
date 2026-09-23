@@ -57,3 +57,27 @@
 .wm-o{font-family:Georgia,serif;font-style:italic}
 @media (max-width:900px){.client-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:480px){.client-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 23 Sep pm: Tk photos */
+.how-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:1rem}
+.tk-badge{margin:0;text-align:center;flex:0 0 auto}
+.tk-badge img{width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px #4DD9D5,0 18px 40px -18px rgba(0,0,0,.45);transform:rotate(-3deg)}
+.tk-badge figcaption{margin-top:.6rem;font-weight:700;font-size:.9rem;color:#0F766E}
+.lane-teaser{background:#0d0f10;padding:0}
+.lane-teaser-inner{position:relative;display:block;max-width:1200px;margin:0 auto;overflow:hidden;text-decoration:none}
+.lane-teaser-inner img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;object-position:50% 40%;filter:saturate(1.05)}
+.lane-teaser-inner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,15,16,.92) 0%,rgba(13,15,16,.55) 45%,rgba(13,15,16,0) 75%)}
+.lt-text{position:absolute;left:clamp(1rem,5vw,4rem);top:50%;transform:translateY(-50%);z-index:1;max-width:30rem}
+.lt-eyebrow{display:block;color:#4DD9D5;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;margin-bottom:.8rem}
+.lt-title{display:block;color:#fff;font-weight:800;font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.1}
+.lt-go{display:inline-block;margin-top:1.2rem;color:#111;background:#4DD9D5;font-weight:700;padding:.7rem 1.2rem;border-radius:8px}
+.lane-teaser-inner:hover .lt-go{background:#fff}
+.cta-photo{display:block;width:100%;height:auto;max-height:340px;object-fit:cover;object-position:50% 25%;border-radius:12px;margin-bottom:1.2rem}
+@media (max-width:768px){
+  .how-head{flex-direction:column-reverse;align-items:flex-start}
+  .tk-badge img{width:110px;height:110px}
+  .cta-visual{display:block}
+  .lane-teaser-inner img{min-height:360px}
+  .lane-teaser-inner::after{background:linear-gradient(0deg,rgba(13,15,16,.95) 0%,rgba(13,15,16,.4) 60%,rgba(13,15,16,.1) 100%)}
+  .lt-text{top:auto;bottom:1.5rem;transform:none}
+}
