@@ -3,8 +3,8 @@
    can be removed on its own. The forge theme, Forge Lane and the client logo strip are
    deliberately left alone (Director's call). */
 
-/* 1. One off-white. The mint (#f0fffe) and the grey (#f8f8f8) were two near-whites side by side. */
-:root { --teal-light: #f8f8f8; }
+/* 1. One off-white: the mint (#f0fffe), Tk's choice (24 Sep). The grey (#f8f8f8) sat beside it as a second near-white. */
+:root { --light: #f0fffe; --teal-light: #f0fffe; }
 
 /* 2. "silent execution" keeps its teal but loses the underline bar, which read as a link. */
 html body .teal-underline::after { content: none; }
