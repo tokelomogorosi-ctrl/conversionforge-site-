@@ -1,0 +1,54 @@
+/* Forge Lane — 23 Sep 2026. Default = a flat, readable gallery (no JS, reduced motion, old phones).
+   lane.js adds .lane-3d to <html> and drives --cam from scroll; then the shops stand along the lane. */
+.lane-page{background:#0d0f10;color:#e9e9e9}
+.lane-page nav{background:rgba(13,15,16,.92)}
+.lane-page .nav-links a{color:#cfd6d6}
+.lane-page .logo-text{color:#fff}
+.lane{position:relative;padding:6rem 1rem 4rem;background:#0d0f10}
+.lane-bg{position:absolute;inset:0;background:#0d0f10 url(/media/lane/alley-tall.webp) center/cover no-repeat;opacity:.35}
+@media (min-width:768px){.lane-bg{background-image:url(/media/lane/alley-wide.webp)}}
+.lane-intro,.lane-end{position:relative;max-width:760px;margin:0 auto 3rem;text-align:center}
+.lane-eyebrow{font:600 .78rem/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#4DD9D5;margin:0 0 1rem}
+.lane-intro h1{font:800 clamp(1.7rem,4.2vw,3rem)/1.12 Inter,sans-serif;color:#fff;margin:0}
+.lane-hint{display:none}
+.lane-end{margin:4rem auto 0}
+.lane-end h2{font:800 clamp(2rem,5vw,3.4rem)/1.05 Inter,sans-serif;color:#fff;margin:0 0 1.5rem}
+.shops{position:relative;list-style:none;margin:0 auto;padding:0;display:grid;gap:2.5rem;max-width:1100px}
+@media (min-width:768px){.shops{grid-template-columns:1fr 1fr}}
+.shop{background:rgba(20,22,24,.86);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.2rem 1.2rem 1.4rem;
+  box-shadow:0 0 0 1px rgba(0,0,0,.4),0 24px 60px -30px var(--neon)}
+.sign{margin:0 0 .9rem;font:800 clamp(1.3rem,2.4vw,1.8rem)/1.1 Inter,sans-serif;color:#fff;letter-spacing:.02em;
+  text-shadow:0 0 6px var(--neon),0 0 18px var(--neon),0 0 36px var(--neon)}
+.window{display:block;border-radius:8px;overflow:hidden;background:#000;border:2px solid rgba(255,255,255,.12)}
+.window img{display:block;width:100%;height:auto}
+.meta{margin:.9rem 0 .4rem;color:#aeb6b6;font-size:.95rem}
+.links{margin:0;display:flex;gap:1.2rem;flex-wrap:wrap}
+.links a{color:#4DD9D5;font-weight:600;font-size:.95rem;text-decoration:underline;text-underline-offset:3px}
+.links a:hover{color:#fff}
+
+/* ---------- the walk (only when lane.js turns it on) ---------- */
+.lane-3d .lane{padding:0;height:calc(100vh + var(--n,10) * 70vh)}
+.lane-3d .lane-stage{position:sticky;top:0;height:100vh;overflow:hidden;perspective:1000px;perspective-origin:50% 45%}
+.lane-3d .lane-bg{opacity:1;transform:scale(calc(1 + var(--p,0) * .35));transform-origin:50% 48%;will-change:transform}
+.lane-3d .lane-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,transparent 30%,rgba(8,9,10,.75) 100%)}
+.lane-3d .lane-intro{position:absolute;left:0;right:0;top:18vh;padding:0 1.2rem;z-index:3;opacity:calc(1 - var(--p,0) * 14);
+  pointer-events:none}
+.lane-3d .lane-hint{display:block;margin-top:1.4rem;color:#9fb;opacity:.7;font-size:.9rem;letter-spacing:.08em}
+.lane-3d .shops{position:absolute;inset:0;display:block;max-width:none;transform-style:preserve-3d;transform:translateZ(var(--cam,0px))}
+.lane-3d .shop{position:absolute;left:50%;top:50%;width:min(40vw,520px);margin:0;
+  transform:translate(-50%,-50%) translate3d(var(--x),0,calc(var(--i) * -1100px - 1500px)) rotateY(var(--ry));
+  opacity:var(--o,0);transition:opacity .25s linear;backface-visibility:hidden}
+.lane-3d .shop:nth-child(odd){--x:-27vw;--ry:24deg}
+.lane-3d .shop:nth-child(even){--x:27vw;--ry:-24deg}
+.lane-3d .lane-end{position:absolute;left:0;right:0;bottom:14vh;z-index:3;margin:0 auto;padding:0 1.2rem;
+  opacity:calc((var(--p,0) - .9) * 10);pointer-events:none}
+.lane-3d .lane-end.on{pointer-events:auto}
+@media (max-width:767px){
+  .lane-3d .lane{height:calc(100vh + var(--n,10) * 90vh)}
+  .lane-3d .shop{width:74vw;padding:.8rem .8rem 1rem}
+  .lane-3d .shop:nth-child(odd){--x:-6vw;--ry:8deg}
+  .lane-3d .shop:nth-child(even){--x:6vw;--ry:-8deg}
+  .lane-3d .window{max-height:52vh}
+  .lane-3d .lane-intro{top:14vh}
+}
+@media (prefers-reduced-motion:reduce){.lane-bg{transform:none!important}}
