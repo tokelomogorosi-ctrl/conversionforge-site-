@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="hero-proof.css?v=20260923j" />
-  <link rel="stylesheet" href="forge-look.css?v=1" />
+  <link rel="stylesheet" href="forge-look.css?v=2" />
   <link rel="preload" as="image" href="/media/brand/forge-hero-wide.webp" media="(min-width: 769px)" />
 
   <!-- Organization schema. Director identity + 6-engine description for AI-search citation. -->
@@ -430,18 +430,28 @@
     </div>
   </section>
 
-  <section class="section-white" id="near-you">
+  <section class="where" id="near-you">
+    <div class="container where-grid">
+      <div class="where-copy">
+        <div class="section-label">Where we work</div>
+        <h2>From Sevenoaks to Toronto.</h2>
+        <p class="section-sub">Based in Sevenoaks, working with businesses across the UK and abroad. Each link below shows real work in that place.</p>
+        <ul class="where-list">
+          <li><a href="/locations/sevenoaks">Sevenoaks</a><span>7 Oaks Grill, Jerkeez 876</span></li>
+          <li><a href="/locations/bromley">Bromley</a><span>Persa London</span></li>
+          <li><a href="/locations/kent">Across Kent</a><span>Shepherd-Prince, kitchens and bathrooms</span></li>
+          <li><a href="/locations/london">London</a><span>Web design and local SEO</span></li>
+          <li><a href="/work/">Further afield</a><span>Pilates Realm in Toronto, Warriorz in Stevenage, Joshfit in Great Yarmouth, and a software platform in build for a business in South Africa</span></li>
+        </ul>
+      </div>
+      <div class="where-globe" aria-hidden="true">
+        <img class="where-ring" src="/media/brand/cf-ring.svg" width="200" height="200" alt="" aria-hidden="true" />
+        <canvas></canvas>
+      </div>
+    </div>
+  </section>
+  <section class="section-white" id="quick-answers">
     <div class="container">
-      <div class="section-label">Where we work</div>
-      <h2>From Sevenoaks to Toronto.</h2>
-      <p class="section-sub">Based in Sevenoaks, working with businesses across the UK and abroad. Each link below shows real work in that place.</p>
-      <ul style="list-style:none;padding:0;margin:1.5rem 0 2.5rem;display:grid;gap:0.75rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
-        <li><a href="/locations/sevenoaks" style="color:var(--teal-ink);font-weight:600">Sevenoaks</a>: 7 Oaks Grill, Chaplins Barbers, Jerkeez 876</li>
-        <li><a href="/locations/bromley" style="color:var(--teal-ink);font-weight:600">Bromley</a>: Persa London</li>
-        <li><a href="/locations/kent" style="color:var(--teal-ink);font-weight:600">Across Kent</a>: Shepherd-Prince, kitchens and bathrooms</li>
-        <li><a href="/locations/london" style="color:var(--teal-ink);font-weight:600">London</a>: web design and local SEO</li>
-        <li><a href="/work/" style="color:var(--teal-ink);font-weight:600">Further afield</a>: Pilates Realm in Toronto, Warriorz in Stevenage, Joshfit in Great Yarmouth, and a software platform in build for a business in South Africa</li>
-      </ul>
       <div class="section-label">Quick answers</div>
       <h2 style="margin-bottom:1rem">What people ask first.</h2>
       <h3 style="font-size:1.1rem;margin:1.25rem 0 0.35rem">Who builds websites in Sevenoaks?</h3>
@@ -895,5 +905,6 @@
 
   <script src="/cf-chat-widget.js" defer></script>
   <script src="/nav-mobile.js" defer></script>
+  <script src="/where-globe.js?v=1" defer></script>
 </body>
 </html>
