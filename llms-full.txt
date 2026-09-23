@@ -551,7 +551,7 @@ Methodology · How Conversion Forge Builds Marketing Systems
 
  Engine 02 
  Proposal generation 
- Three modes (priced-stages, discovery, tier-2 multi-phase). Brand-cohered, dual-emit markdown plus HTML, humanizer-checked. 
+ Three shapes of proposal: fixed-price stages, a discovery stage, or a phased build. Written in plain English and sent as a branded PDF. 
 
  Engine 03 
  Demo build 
