@@ -95,3 +95,7 @@
   .cc-track{animation:none;width:auto;flex-wrap:wrap;justify-content:center}
   .cc-copy{display:none}
 }
+
+/* 23 Sep: phones sit lower, level with the headline (Director) */
+@media (min-width:1101px){.proof{margin-top:56px}}
+@media (min-width:768px) and (max-width:1100px){.proof{margin-top:32px}}
