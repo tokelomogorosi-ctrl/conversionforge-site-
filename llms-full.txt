@@ -1,6 +1,6 @@
 # Conversion Forge — full text
 
-> Web design, local search and lead generation for small businesses in the UK and worldwide. Compiled 2026-09-23 from the live pages; short version at https://conversionforge.co.uk/llms.txt
+> Web design, local search and lead generation for small businesses in the UK and worldwide. Compiled 2026-09-24 from the live pages; short version at https://conversionforge.co.uk/llms.txt
 
 
 
@@ -16,22 +16,13 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
 ## At 60 miles an hour, the loudest noise in this business comes from the silent execution of our AI.
 
  We build the website, get you found on Google, and set up what catches the enquiry. 
- Most sites live in 72 hours You own the code, domain and accounts No monthly fee to stay live 
+ Most sites live in 72 hours · You own the code, domain and accounts · No monthly fee to stay live 
 
  Book Free Strategy Call
 
  See how it works → 
 
  One team, start to finish. You deal with the same people from the first call to the handover. 
-
- 71,583 
- views generated 
-
- 28,000+ 
- accounts reached 
-
- 29 days 
- to results 
 
  Example: how enquiries show up 
 
@@ -186,11 +177,11 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
 
  Based in Sevenoaks, working with businesses across the UK and abroad. Each link below shows real work in that place. 
 
- Sevenoaks : 7 Oaks Grill, Chaplins Barbers, Jerkeez 876 
- Bromley : Persa London 
- Across Kent : Shepherd-Prince, kitchens and bathrooms 
- London : web design and local SEO 
- Further afield : Pilates Realm in Toronto, Warriorz in Stevenage, Joshfit in Great Yarmouth, and a software platform in build for a business in South Africa 
+ Sevenoaks 7 Oaks Grill, Jerkeez 876 
+ Bromley Persa London 
+ Across Kent Shepherd-Prince, kitchens and bathrooms 
+ London Web design and local SEO 
+ Further afield Pilates Realm in Toronto, Warriorz in Stevenage, Joshfit in Great Yarmouth, and a software platform in build for a business in South Africa 
 
  Quick answers 
 
@@ -355,7 +346,7 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
 
  Ongoing optimisation
 
- Talk to Us 
+ Talk to us 
 
  Just need a website? The minimum for a simple website is £175, and most service businesses go live in under 72 hours. See what a website costs . 
  Also available, priced around how hands-on you want us: social media management from £300 a month, ongoing care plans from £35 a month, Google Business Profiles, online ordering and payments, marketplace listings, ads, and more. Ask the assistant in the corner, or book a call, and we'll shape it around your business. 
@@ -374,7 +365,7 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
 
  Clear next steps, whatever you decide
 
- Email Us
+ Email us
 
  or 
 
@@ -453,7 +444,7 @@ Free Website Audit for Small Businesses · Conversion Forge
 
  Prefer to message us instead? 
 
- Message Us on WhatsApp
+ Message us on WhatsApp
 
  Or email hello@weareconversionforge.uk
 
@@ -467,7 +458,7 @@ About Tk · Founder of Conversion Forge
 
  About 
 
-## One person.From London to Toronto.
+## One team.From London to Toronto.
 
  Conversion Forge is not an agency floor. It is me, Tk, and a stack of systems I built so that a small business can get the same machinery a big one buys, without the monthly bill. 
 
@@ -707,7 +698,7 @@ Forge Lane · Live websites built by Conversion Forge
 
  Forge Lane 
 
-## Every shop on this lane is a real business. I built every website. All of them are live today.
+## Every shop on this lane is a real business. We built every website. All of them are live today.
 
  Scroll to walk down the lane 
 

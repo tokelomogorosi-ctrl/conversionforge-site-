@@ -12,10 +12,11 @@
     var css = '\
     .cf-burger{display:none;background:none;border:0;cursor:pointer;padding:8px;margin-left:auto;flex-direction:column;gap:5px}\
     .cf-burger span{display:block;width:24px;height:2px;background:#1a1a1a;border-radius:2px;transition:transform .2s,opacity .2s}\
+    .cf-burger.cf-dark span{background:#fff}\
     .cf-burger.cf-on span:nth-child(1){transform:translateY(7px) rotate(45deg)}\
     .cf-burger.cf-on span:nth-child(2){opacity:0}\
     .cf-burger.cf-on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}\
-    @media(max-width:768px){\
+    @media(max-width:1100px){\
       .cf-burger{display:flex}\
       nav .nav-links{display:none !important}\
       nav.cf-nav-open .nav-links{display:flex !important;flex-direction:column;align-items:stretch;gap:0;\
@@ -36,6 +37,9 @@
     burger.setAttribute('aria-expanded', 'false');
     burger.innerHTML = '<span></span><span></span><span></span>';
     inner.appendChild(burger);
+    // On a dark header (Forge Lane) the dark bars vanish; switch them to white.
+    var m = (getComputedStyle(nav).backgroundColor.match(/[\d.]+/g) || []).map(Number);
+    if (m.length >= 3 && (m[3] === undefined || m[3] > 0.3) && (0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2]) < 110) burger.classList.add('cf-dark');
 
     function setOpen(open) {
       nav.classList.toggle('cf-nav-open', open);
