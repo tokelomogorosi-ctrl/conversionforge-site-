@@ -386,6 +386,9 @@ footer { background: var(--charcoal); padding: 2.5rem 2rem; border-top: 1px soli
 .footer-links a:hover { color: var(--teal); }
 .footer-copy { color: #444; font-size: 0.8rem; }
 .footer-copy a { color: var(--teal); text-decoration: none; }
+.footer-social { display: flex; gap: 1.25rem; justify-content: center; }
+.footer-social a { color: #666; display: inline-flex; padding: 4px; transition: color 0.2s; }
+.footer-social a:hover, .footer-social a:focus-visible { color: var(--teal); }
 
 /* ── STEP ICON HOVER ANIMATIONS (4 steps each does what it depicts) ── */
 
