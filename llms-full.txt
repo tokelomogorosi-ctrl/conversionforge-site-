@@ -1,6 +1,6 @@
 # Conversion Forge — full text
 
-> Web design, local search and lead generation for small businesses in the UK and worldwide. Compiled 2026-09-24 from the live pages; short version at https://conversionforge.co.uk/llms.txt
+> Web design, local search and lead generation for small businesses in the UK and worldwide. Compiled 2026-10-27 from the live pages; short version at https://conversionforge.co.uk/llms.txt
 
 
 
@@ -53,6 +53,7 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
  Performing arts academy 
  TN14 Cars Taxis · Sevenoaks 
  Kitchen and bathroom fitters 
+ Nightlife concierge · Mayfair 
  Restaurant · Sevenoaks 
 
  Zara Richards Choreographer · London 
@@ -64,6 +65,7 @@ Conversion Forge · Web Design, Local SEO & Lead Generation · UK & Worldwide
  Performing arts academy 
  TN14 Cars Taxis · Sevenoaks 
  Kitchen and bathroom fitters 
+ Nightlife concierge · Mayfair 
  Restaurant · Sevenoaks 
 
  The Problem 
@@ -652,7 +654,7 @@ Areas · Sevenoaks, Kent, London and Worldwide · Conversion Forge
 
 ## Choose an area
 
- Area Sevenoaks businesses we have built for, on streets you walk down. Area From a Bromley studio to the top 5 percent of its eBay category. Area Kent businesses, found and booked. Built from Sevenoaks. Area London businesses, found and booked. Built 21 miles from Charing Cross. Where the work goes 
+ Area Web design and SEO in Sevenoaks, for businesses on streets we walk down. Area From a Bromley studio to the top 5 percent of its eBay category. Area Kent businesses, found and booked: local SEO and websites that bring in leads. Area London businesses, found and booked. Built 21 miles from Charing Cross. Where the work goes 
 
 ## Built in Sevenoaks. Working wherever the business is.
 
@@ -834,25 +836,29 @@ Local SEO and AI Search Visibility for Small Businesses · Conversion Forge
 
  Locality goes into the titles and the headings, so a page about a Sevenoaks business says Sevenoaks where Google reads first. JSON-LD business schema carries the real address and the towns you serve. Breadcrumb schema tells a crawler where each page sits, and FAQ schema turns your real questions into results. The sitemap gets true dates, not placeholders. The robots.txt names all 15 AI crawlers, so the assistants that answer questions are allowed to read you. Two files, llms.txt and llms-full.txt, give those assistants the plain facts about the business in your own words. Canonical tags settle which page gets the credit. Reviews are the ones real customers wrote. We never fabricate a rating, and we will not add a star widget that the reviews do not support. 03 
 
+## Where AI answers appear, and where the map still wins
+
+ AI answers show up most on questions: how much a website costs, what to check before hiring someone, which option suits a small shop. A search with a trade and a town, a barber in Sevenoaks or a plumber in Bromley, still goes mostly to the map and the three names under it. So the work splits in two. For the questions, a page that answers them plainly near the top, in full sentences an assistant can quote, kept up to date and dated. For the map, a Google Business Profile finished properly and a site that agrees with it. Being mentioned beyond your own site matters too. Assistants read what other people say about a business: reviews, local press, the sites of the people you work with, and video. We tell you which of those are worth your time and which are not. 04 
+
 ## The Google Business Profile most businesses never finish
 
- Most profiles were set up once, years ago, and left. The name is right and the phone number is right, and everything else is blank or stale. The finished version has the right categories and the services listed one by one. It has the real photographs of the shop, the team and the work. It has weekly posts, so Google sees a business that is open. It has reviews from real customers, answered. And it carries the one link that matters most: the booking or ordering link, so a search becomes an appointment without a detour. 04 
+ Most profiles were set up once, years ago, and left. The name is right and the phone number is right, and everything else is blank or stale. The finished version has the right categories and the services listed one by one. It has the real photographs of the shop, the team and the work. It has weekly posts, so Google sees a business that is open. It has reviews from real customers, answered. And it carries the one link that matters most: the booking or ordering link, so a search becomes an appointment without a detour. 05 
 
 ## A Sevenoaks restaurant, 29 days, zero ad spend
 
- 7 Oaks Grill had strong word of mouth and no online presence. We built an Instagram content system and did the Google Business Profile work. In 29 days the account reached 28,000+ accounts and produced 71,583 views, with zero paid advertising. Persa London, a Bromley studio making hand-painted leather, is the same idea on a marketplace. 25+ keyword-researched listing rewrites and 240 product variations on eBay took the shop to the top 5 percent of its UK category, with 61,515 impressions in 30 days and a 35.9 percent improvement in conversion rate. Both numbers come from the platforms' own dashboards, not from us. 05 
+ 7 Oaks Grill had strong word of mouth and no online presence. We built an Instagram content system and did the Google Business Profile work. In 29 days the account reached 28,000+ accounts and produced 71,583 views, with zero paid advertising. Persa London, a Bromley studio making hand-painted leather, is the same idea on a marketplace. 25+ keyword-researched listing rewrites and 240 product variations on eBay took the shop to the top 5 percent of its UK category, with 61,515 impressions in 30 days and a 35.9 percent improvement in conversion rate. Both numbers come from the platforms' own dashboards, not from us. 06 
 
 ## What takes weeks, and what we will not promise
 
- Schema, sitemaps and crawler files take an afternoon and show up in Search Console within days. The profile work compounds over weeks. Rankings move when Google decides they move. We will not promise a position, a date, or a number of leads. We will show you the Search Console data, the impressions, the clicks and the positions, and you can read it without us in the room. 06 
+ Schema, sitemaps and crawler files take an afternoon and show up in Search Console within days. The profile work compounds over weeks. Rankings move when Google decides they move. We will not promise a position, a date, or a number of leads. We will show you the Search Console data, the impressions, the clicks and the positions, and you can read it without us in the room. 07 
 
 ## How it starts
 
- The free website audit is at conversionforge.co.uk/free-audit. We look at your site, your schema, your sitemap and your Google Business Profile, and we send you what is working and what is missing. If you want the work done, you email hello@weareconversionforge.uk and we agree the scope. There is no account manager. There is us, and you will always know who did the work. FAQ 
+ The free website audit is at conversionforge.co.uk/free-audit. We look at your site, your schema, your sitemap and your Google Business Profile, and we send you what is working and what is missing. If you want the work done, you email hello@weareconversionforge.uk and we agree the scope. There is no account manager. There is us, and you will always know who did the work. Close to home, the work is on two pages of its own: SEO in Sevenoaks and local SEO across Kent . Last updated 27 October 2026. FAQ 
 
 ## Questions people ask
 
- Do I need a new website for this? Usually not; most sites need the right structure and files added to what is already there, and we check yours before suggesting anything bigger. How long before I see results? The technical changes show in Search Console within days; ranking and profile changes take weeks, and we say which is which before we start. Can you guarantee a top position? No, and nobody honest can; we guarantee the work, the measurement and a report you can check yourself. What is llms.txt? A plain text file on your site that tells AI assistants what your business does, in your own words, so their answers quote you rather than guess. I already have a Google Business Profile, is that enough? It is the start; we check the categories, services, photographs, posts, reviews and the booking link, and finish what was left. How do I start? Request the free audit at conversionforge.co.uk/free-audit, or email hello@weareconversionforge.uk . Keep reading 
+ Do I need a new website for this? Usually not; most sites need the right structure and files added to what is already there, and we check yours before suggesting anything bigger. How long before I see results? The technical changes show in Search Console within days; ranking and profile changes take weeks, and we say which is which before we start. Can you guarantee a top position? No, and nobody honest can; we guarantee the work, the measurement and a report you can check yourself. Do you do local SEO in Sevenoaks and Kent? Yes; we are based in Sevenoaks, and the Sevenoaks and Kent pages show the local work with its numbers. What is llms.txt? A plain text file on your site that tells AI assistants what your business does, in your own words, so their answers quote you rather than guess. I already have a Google Business Profile, is that enough? It is the start; we check the categories, services, photographs, posts, reviews and the booking link, and finish what was left. How do I start? Request the free audit at conversionforge.co.uk/free-audit, or email hello@weareconversionforge.uk . Keep reading 
 
 ## More of the work
 
@@ -906,7 +912,7 @@ Google Ads and Meta Ads Management for Small Businesses · Conversion Forge
 
 ## More of the work
 
- Case study 7 Oaks Grill: word of mouth, put online. Case study Persa London: one pair of hands, top five percent of the category. Area Sevenoaks businesses we have built for, on streets you walk down. Next step 
+ Case study 7 Oaks Grill: word of mouth, put online. Case study Persa London: one pair of hands, top five percent of the category. Area Web design and SEO in Sevenoaks, for businesses on streets we walk down. Next step 
 
 ## Have a look at your own business the way Google sees it.
 
@@ -1011,16 +1017,16 @@ How Much Does a Small Business Website Cost? Prices from £175 · Conversion For
 
 ---
 
-# Web Design, Local SEO and Lead Generation in Sevenoaks · Conversion Forge
+# Web Design and SEO in Sevenoaks · From £175 · Conversion Forge
 URL: https://conversionforge.co.uk/locations/sevenoaks
 
-Web Design, Local SEO and Lead Generation in Sevenoaks · Conversion Forge 
+Web Design and SEO in Sevenoaks · From £175 · Conversion Forge 
 
  Area 
 
-## Sevenoaks businesses we have built for, on streets you walk down.
+## Web design and SEO in Sevenoaks, for businesses on streets we walk down.
 
- Conversion Forge is based in Sevenoaks. Websites, local search and lead generation for Sevenoaks businesses: a restaurant on London Road, a barber on Dartford Road, a grill with 71,583 views in 29 days. Get the free audit or email Tk Based in Sevenoaks No account managers, no hand-offs From £175 Sevenoaks, Kent · 51.27°N 0.19°E Illustration, generated for this site 71,583 views in 29 days for 7 Oaks Grill 41 Dartford Road: Chaplins Barbers 73 London Road: Jerkeez 876 01 
+ Web design and SEO from a team based in Sevenoaks: websites you own from £175, live in under 72 hours, and a Google Business Profile finished properly. Get the free audit or email Tk Based in Sevenoaks No account managers, no hand-offs From £175 Sevenoaks, Kent · 51.27°N 0.19°E Illustration, generated for this site 71,583 views in 29 days for 7 Oaks Grill 41 Dartford Road: Chaplins Barbers 73 London Road: Jerkeez 876 01 
 
 ## Based here, not near here
 
@@ -1030,25 +1036,33 @@ Web Design, Local SEO and Lead Generation in Sevenoaks · Conversion Forge
 
  7 Oaks Grill is a restaurant with strong word of mouth and, until recently, no online presence. An Instagram content system and Google Business Profile work reached 28,000+ accounts and produced 71,583 views in 29 days, with zero ad spend. The numbers are the platforms' own. Chaplins Barbers, at 41 Dartford Road, is a heritage barber built around the year 1889. Bookings moved to WhatsApp and the shop got its first proper website at chaplinsofsevenoaks.co.uk , handed over for a single fee. Jerkeez 876, at 73 London Road, serves Jamaican and Caribbean food. The menu and pre-orders for collection are online at jerkeez.co.uk . The 876 is Jamaica's dialling code, the kind of detail we look for before writing a line. 03 
 
-## What a Sevenoaks business gets from us
+## Web design in Sevenoaks: what you get
 
- A website you own from the first day, with the search and AI-search foundations already in place: a sitemap, a robots file naming all 15 AI crawlers, schema on every page, and an llms.txt so the assistants people now ask for recommendations can read your facts in your words. Copy written from your business, in plain British English, with the street and the specifics in it. A booking or ordering step that fits how you already work, WhatsApp for a barber, pre-orders for a kitchen. And a Google Business Profile finished properly, because for a Sevenoaks search the map is where most customers decide. 04 
+ A website you own from the first day, with the search and AI-search foundations already in place: a sitemap, a robots file naming all 15 AI crawlers, schema on every page, and an llms.txt so the assistants people now ask for recommendations can read your facts in your words. Copy written from your business, in plain British English, with the street and the specifics in it. A booking or ordering step that fits how you already work, WhatsApp for a barber, pre-orders for a kitchen. The full method is on the web design page , with the live sites we have handed over. 04 
+
+## SEO in Sevenoaks: what we change
+
+ Local SEO for a Sevenoaks business starts with the words Google reads first. The town goes into the page titles and the headings, and the business schema carries your real address and the towns you serve. The sitemap carries true dates, and canonical tags settle which page gets the credit. Then the Google Business Profile, because for a Sevenoaks search the map is where most customers decide. The finished profile has the right categories, the services listed one by one, the real photographs, weekly posts, reviews from real customers, answered, and the booking or ordering link. Rankings take weeks to move, and nobody can promise you a position. What we promise is the work, the measurement, and a Search Console report you can check yourself. The method in full is on the local SEO page . 05 
+
+## Leads, once people find you
+
+ Being found is half of it. The other half is somewhere for the search to go: Chaplins books by WhatsApp, Jerkeez takes pre-orders for collection, and the enquiry lands in the owner's own inbox or phone. Follow-up sequences run on days 3, 7, 14 and 21 and stop the moment someone replies. That is the lead generation system , and if you want paid ads as well, they are measured in bookings, not clicks . 06 
 
 ## What it costs and what it does not
 
- A website you own starts from £175 and is live in under 72 hours. Larger builds are quoted before they start. There is no retainer required to keep the site live, and no monthly fee to keep your own domain pointing at your own pages. Care plans exist if you would like someone on hand, and they are optional. What it does not cost is your ownership. The code, the content and the domain are yours when the work is handed over. Where the work goes 
+ A website you own starts from £175 and is live in under 72 hours. Larger builds are quoted before they start, and the price guide writes the numbers down. There is no retainer required to keep the site live, and no monthly fee to keep your own domain pointing at your own pages. Care plans exist if you would like someone on hand, and they are optional. What it does not cost is your ownership. The code, the content and the domain are yours when the work is handed over. Where the work goes 
 
 ## Built in Sevenoaks. Working wherever the business is.
 
- Some clients are on streets we can walk down; others are in Toronto and South Africa. Distances from Sevenoaks, as the crow flies. Home Sevenoaks Where the work is built 12 miles Bromley Persa London 21 miles Central London Charing Cross 47 miles Stevenage Warriorz Performing Arts Academy 113 miles Great Yarmouth Joshfit Personal Training 3,569 miles Toronto Pilates Realm 5,600 miles South Africa A software platform, in build 05 
+ Some clients are on streets we can walk down; others are in Toronto and South Africa. Distances from Sevenoaks, as the crow flies. Home Sevenoaks Where the work is built 12 miles Bromley Persa London 21 miles Central London Charing Cross 47 miles Stevenage Warriorz Performing Arts Academy 113 miles Great Yarmouth Joshfit Personal Training 3,569 miles Toronto Pilates Realm 5,600 miles South Africa A software platform, in build 07 
 
 ## The free audit, done on your business
 
- The free website audit is at conversionforge.co.uk/free-audit. We look at your current site, your Google Business Profile and how you show up when someone in Sevenoaks searches for what you do, and we send you what is working and what is missing. If you would rather write first, the address is hello@weareconversionforge.uk . FAQ 
+ The free website audit is at conversionforge.co.uk/free-audit. We look at your current site, your Google Business Profile and how you show up when someone in Sevenoaks searches for what you do, and we send you what is working and what is missing. If you would rather write first, the address is hello@weareconversionforge.uk . Last updated 27 October 2026. FAQ 
 
 ## Questions people ask
 
- Are you actually in Sevenoaks? Yes; we live and work here, and the three businesses above are on London Road and Dartford Road. What does a website cost? A website you own starts from £175 and is live in under 72 hours; larger builds are quoted first. Do I have to pay monthly? No; the site is handed over and stays live without a retainer, and care plans are optional. Can bookings work the way I already take them? Yes; Chaplins books by WhatsApp and Jerkeez takes pre-orders for collection, each on the system the owner already used. Will I show up in AI answers as well as Google? The site ships with llms.txt and a robots file that names the AI crawlers, which is the groundwork; positions in either take weeks and nobody can promise them. How do I start? Request the free audit at conversionforge.co.uk/free-audit or email hello@weareconversionforge.uk . Keep reading 
+ Are you actually in Sevenoaks? Yes; we live and work here, and the three businesses above are on London Road and Dartford Road. Do you do SEO for Sevenoaks businesses? Yes; local SEO is the town in your titles and headings, schema with your real address, and a Google Business Profile finished properly, measured in Search Console. Do you work with businesses in Dartford, Tonbridge and the towns around Sevenoaks? Yes; Dartford is about 12 miles from Sevenoaks, and the Kent page covers the towns we work across. What does a website cost? A website you own starts from £175 and is live in under 72 hours; larger builds are quoted first. Do I have to pay monthly? No; the site is handed over and stays live without a retainer, and care plans are optional. Can bookings work the way I already take them? Yes; Chaplins books by WhatsApp and Jerkeez takes pre-orders for collection, each on the system the owner already used. Will I show up in AI answers as well as Google? The site ships with llms.txt and a robots file that names the AI crawlers, which is the groundwork; positions in either take weeks and nobody can promise them. How do I start? Request the free audit at conversionforge.co.uk/free-audit or email hello@weareconversionforge.uk . Keep reading 
 
 ## More of the work
 
@@ -1111,14 +1125,14 @@ Web Design and Online Sales for Bromley Businesses · Conversion Forge
 
 ---
 
-# Small Business Websites and Local SEO Across Kent · Conversion Forge
+# Websites, Local SEO and Lead Generation in Kent · Conversion Forge
 URL: https://conversionforge.co.uk/locations/kent
 
-Small Business Websites and Local SEO Across Kent · Conversion Forge 
+Websites, Local SEO and Lead Generation in Kent · Conversion Forge 
 
  Area 
 
-## Kent businesses, found and booked. Built from Sevenoaks.
+## Kent businesses, found and booked: local SEO and websites that bring in leads.
 
  Websites, local search and lead generation for small businesses across Kent, built from Sevenoaks and handed over. Sevenoaks, Bromley, Tonbridge, Tunbridge Wells and further. Get the free audit or email Tk Based in Sevenoaks No account managers, no hand-offs From £175 Kent · the Weald, from Sevenoaks Illustration, generated for this site 71,583 views in 29 days in Sevenoaks 61,515 impressions in 30 days in Bromley 28 classes on one timetable page in Stevenage 01 
 
@@ -1134,21 +1148,29 @@ Small Business Websites and Local SEO Across Kent · Conversion Forge
 
  Distance does not change the work. Warriorz Performing Arts Academy in Stevenage got a site built on its real 28-class timetable. Joshfit Personal Training in Great Yarmouth, established 2014, got a site with a merchandise catalogue. Pilates Realm in Toronto got a booking site delivered without a single in-person meeting. Each was built from Kent and handed over, the same as a site for a business down the road. Further still, we are building a software platform for a business in South Africa. 04 
 
+## Local SEO in Kent, town by town
+
+ Local SEO in Kent is mostly the map. Someone in Tonbridge or Maidstone searches for a trade and a town, and the three businesses under the map get the call. So the work starts with the Google Business Profile: the right categories, the services listed one by one, the real photographs, weekly posts, real reviews, answered, and the booking link. Then the site, so it agrees with the profile. The towns you serve go into the titles and headings, and the business schema carries your real address. Rankings take weeks to move and nobody can promise a position; we report from Search Console so you can check the numbers yourself. The full method is on the local SEO page . 05 
+
+## Lead generating websites for Kent businesses
+
+ A website brings in leads when a search has somewhere to go. Every site we build has a booking or ordering step that fits how the business already works, and the enquiry lands in the owner's own inbox or phone, on their own domain. The client owns the list. Follow-up runs on days 3, 7, 14 and 21 and stops the moment someone replies. We measure to the booking, not the click, because a lead is not a customer until they turn up. That is the lead generation system , and the price guide writes down what a site costs. 06 
+
 ## What every Kent business gets, whatever the town
 
  A website you own. A sitemap, a robots file naming all 15 AI crawlers, schema on every page and an llms.txt, so both Google and the AI assistants can read your facts. A booking or ordering step that fits how you already work. Every site passes a 20-check gate before it goes live, written from real incidents so the same mistake is never shipped twice. Where the work goes 
 
 ## Built in Sevenoaks. Working wherever the business is.
 
- Some clients are on streets we can walk down; others are in Toronto and South Africa. Distances from Sevenoaks, as the crow flies. Home Sevenoaks Where the work is built 12 miles Bromley Persa London 21 miles Central London Charing Cross 47 miles Stevenage Warriorz Performing Arts Academy 113 miles Great Yarmouth Joshfit Personal Training 3,569 miles Toronto Pilates Realm 5,600 miles South Africa A software platform, in build 05 
+ Some clients are on streets we can walk down; others are in Toronto and South Africa. Distances from Sevenoaks, as the crow flies. Home Sevenoaks Where the work is built 12 miles Bromley Persa London 21 miles Central London Charing Cross 47 miles Stevenage Warriorz Performing Arts Academy 113 miles Great Yarmouth Joshfit Personal Training 3,569 miles Toronto Pilates Realm 5,600 miles South Africa A software platform, in build 07 
 
 ## What it costs
 
- A website you own starts from £175 and is live in under 72 hours. Larger builds are quoted before they start. No retainer is required to keep the site live, and care plans are optional. The free website audit is at conversionforge.co.uk/free-audit, and the email is hello@weareconversionforge.uk . FAQ 
+ A website you own starts from £175 and is live in under 72 hours. Larger builds are quoted before they start. No retainer is required to keep the site live, and care plans are optional. The free website audit is at conversionforge.co.uk/free-audit, and the email is hello@weareconversionforge.uk . Last updated 27 October 2026. FAQ 
 
 ## Questions people ask
 
- Which towns do you cover? Sevenoaks, Bromley, Tonbridge, Tunbridge Wells, Maidstone and the towns between, and further afield remotely. Do you work remotely? Yes; Stevenage, Great Yarmouth and Toronto were all delivered without changing how the work is done. What does a website cost? From £175 for a website you own, live in under 72 hours; larger builds are quoted first. Is there a monthly fee? No retainer is required to keep the site live; care plans exist and are optional. What is the 20-check gate? A list of twenty checks, each one written from something that once went wrong on a real site, that every build must pass before it goes live. How do I start? Request the free audit at conversionforge.co.uk/free-audit or email hello@weareconversionforge.uk . Keep reading 
+ Which towns do you cover? Sevenoaks, Bromley, Tonbridge, Tunbridge Wells, Maidstone and the towns between, and further afield remotely. Do you offer local SEO services in Kent? Yes; a finished Google Business Profile, the towns you serve in your titles and schema, and a Search Console report you can check yourself. Do you work with businesses in Dartford? Yes; Dartford is about 12 miles from our base in Sevenoaks, and the work is the same as for a business down the road. Do you work remotely? Yes; Stevenage, Great Yarmouth and Toronto were all delivered without changing how the work is done. What does a website cost? From £175 for a website you own, live in under 72 hours; larger builds are quoted first. Is there a monthly fee? No retainer is required to keep the site live; care plans exist and are optional. What is the 20-check gate? A list of twenty checks, each one written from something that once went wrong on a real site, that every build must pass before it goes live. How do I start? Request the free audit at conversionforge.co.uk/free-audit or email hello@weareconversionforge.uk . Keep reading 
 
 ## More of the work
 
@@ -1248,7 +1270,7 @@ URL: https://conversionforge.co.uk/work/7-oaks-grill
 
 ## More of the work
 
- Service Leads that arrive while you are working, from systems you own. Area Sevenoaks businesses we have built for, on streets you walk down. Case study Chaplins Barbers: 1889 on the sign, 1889 on the site. Next step 
+ Service Leads that arrive while you are working, from systems you own. Area Web design and SEO in Sevenoaks, for businesses on streets we walk down. Case study Chaplins Barbers: 1889 on the sign, 1889 on the site. Next step 
 
 ## Have a look at your own business the way Google sees it.
 
@@ -1344,7 +1366,7 @@ Chaplins Barbers, Sevenoaks: a barber shop website built around 1889 · Conversi
 
 ## More of the work
 
- Service A website you own. Built in Sevenoaks. Live in days, not months. Area Sevenoaks businesses we have built for, on streets you walk down. Case study Jerkeez 876: a new restaurant, ordering online in weeks. Next step 
+ Service A website you own. Built in Sevenoaks. Live in days, not months. Area Web design and SEO in Sevenoaks, for businesses on streets we walk down. Case study Jerkeez 876: a new restaurant, ordering online in weeks. Next step 
 
 ## Have a look at your own business the way Google sees it.
 
@@ -1394,7 +1416,7 @@ Jerkeez 876, Sevenoaks Caribbean takeaway: menu online and pre-orders for collec
 
 ## More of the work
 
- Service A website you own. Built in Sevenoaks. Live in days, not months. Area Sevenoaks businesses we have built for, on streets you walk down. Case study Pilates Realm: booked from a page she owns, built from Kent. Next step 
+ Service A website you own. Built in Sevenoaks. Live in days, not months. Area Web design and SEO in Sevenoaks, for businesses on streets we walk down. Case study Pilates Realm: booked from a page she owns, built from Kent. Next step 
 
 ## Have a look at your own business the way Google sees it.
 
@@ -1582,7 +1604,7 @@ Shepherd-Prince, Kent: a kitchen and bathroom fitter's website from 1,231 photog
 
 ## More of the work
 
- Service A website you own. Built in Sevenoaks. Live in days, not months. Area Kent businesses, found and booked. Built from Sevenoaks. Case study Pilates Realm: booked from a page she owns, built from Kent. Next step 
+ Service A website you own. Built in Sevenoaks. Live in days, not months. Area Kent businesses, found and booked: local SEO and websites that bring in leads. Case study Pilates Realm: booked from a page she owns, built from Kent. Next step 
 
 ## Have a look at your own business the way Google sees it.
 
