@@ -1,0 +1,27 @@
+{
+  "name": "Conversion Forge",
+  "short_name": "Conversion Forge",
+  "description": "Conversion Forge builds websites, local search visibility and lead generation for small businesses in the UK and worldwide. Built once, handed over, yours to keep.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4DD9D5",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
