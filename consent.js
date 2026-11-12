@@ -1,9 +1,10 @@
 /* Conversion Forge — analytics consent (14 Sep 2026).
    Google Analytics loads ONLY after the visitor says yes. Until then no Google Analytics script, request or cookie.
+   12 Nov 2026: Analytics now loads through Google Tag Manager (GTM-N9LXTXNN), and Tag Manager itself also loads only after yes.
    The choice is remembered in this browser's localStorage under "cf-analytics" (not a cookie) and can be changed
    on /privacy.html. Once allowed, it also counts enquiry actions: audit form sent, email, WhatsApp and phone taps. */
 (function () {
-  var GA = 'G-WH2KGWG5MH', KEY = 'cf-analytics', loaded = false;
+  var GTM = 'GTM-N9LXTXNN', KEY = 'cf-analytics', loaded = false;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   function choice() { try { return window.localStorage.getItem(KEY); } catch (e) { return null; } }
@@ -11,13 +12,13 @@
   function load() {
     if (loaded) return; loaded = true;
     gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA;
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM;
     document.head.appendChild(s);
-    gtag('js', new Date()); gtag('config', GA);
     var ev = document.querySelector('meta[name="cf-ga-event"]');
-    if (ev && ev.content) gtag('event', ev.content, { page_path: location.pathname });
+    if (ev && ev.content) window.dataLayer.push({ event: ev.content, page_path: location.pathname });
   }
-  function track(name) { if (loaded) gtag('event', name, { page_path: location.pathname }); }
+  function track(name) { if (loaded) window.dataLayer.push({ event: name, page_path: location.pathname }); }
   document.addEventListener('click', function (e) {
     var a = e.target && e.target.closest ? e.target.closest('a[href]') : null; if (!a) return;
     var h = a.getAttribute('href') || '';
