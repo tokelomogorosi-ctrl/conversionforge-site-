@@ -372,7 +372,7 @@ h2 {
   border: 1px solid rgba(77,217,213,0.2); padding: 2.5rem; text-align: center;
 }
 .cta-card-icon { margin-bottom: 1.2rem; }
-.cta-card h4 { font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.75rem; }
+.cta-card h4, .cta-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.75rem; }
 .cta-card p { color: #aaa; font-size: 0.9rem; margin-bottom: 1.5rem; }
 .cta-card-meta { display: flex; flex-direction: column; gap: 0.4rem; }
 .cta-card-meta span { font-size: 0.85rem; color: #666; }

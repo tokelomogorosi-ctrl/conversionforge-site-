@@ -38,7 +38,7 @@ html body .hero-founder p, html body .card-face p { font-size: 1rem; }
 html body .card-face h3, html body .section-sub, html body .ladder-card h3,
 html body .hero-sub, html body .quote-text, html body .container h3, html body .price-header h3 { font-size: 1.125rem; }
 
-html body blockquote, html body .cta-card h4 { font-size: 1.25rem; }
+html body blockquote, html body .cta-card h4, html body .cta-card h3 { font-size: 1.25rem; }
 
 html body .lt-title { font-size: 2.8rem; }
 
