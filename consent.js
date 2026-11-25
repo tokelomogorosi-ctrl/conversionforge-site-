@@ -2,7 +2,8 @@
    Google Analytics loads ONLY after the visitor says yes. Until then no Google Analytics script, request or cookie.
    12 Nov 2026: Analytics now loads through Google Tag Manager (GTM-N9LXTXNN), and Tag Manager itself also loads only after yes.
    The choice is remembered in this browser's localStorage under "cf-analytics" (not a cookie) and can be changed
-   on /privacy.html. Once allowed, it also counts enquiry actions: audit form sent, email, WhatsApp and phone taps. */
+   on /privacy.html. 25 Nov 2026: Cloudflare Web Analytics (cookieless) counts every visit separately, from a tag in each page, not from here.
+   Once allowed, it also counts enquiry actions: audit form sent, email, WhatsApp and phone taps. */
 (function () {
   var GTM = 'GTM-N9LXTXNN', KEY = 'cf-analytics', loaded = false;
   window.dataLayer = window.dataLayer || [];
@@ -38,7 +39,7 @@
       + '#cf-consent button:focus-visible{outline:3px solid #fff;outline-offset:2px}';
     var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
     var d = document.createElement('div'); d.id = 'cf-consent'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Analytics choice');
-    d.innerHTML = '<p>Can I count your visit? Google Analytics only loads if you say yes. <a href="/privacy.html#cookies">Details</a></p>'
+    d.innerHTML = '<p>Can Google Analytics count your visit? It only loads if you say yes. <a href="/privacy.html#cookies">Details</a></p>'
       + '<div class="row"><button type="button" class="yes">Yes, count it</button><button type="button" class="no">No thanks</button></div>';
     d.querySelector('.yes').addEventListener('click', function () { remember('granted'); d.remove(); load(); });
     d.querySelector('.no').addEventListener('click', function () { remember('denied'); d.remove(); });

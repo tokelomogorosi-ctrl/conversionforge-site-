@@ -53,6 +53,8 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://conversionforge.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Privacy policy", "item": "https://conversionforge.co.uk/privacy.html"}]}</script>
   <!-- Google Analytics loads only after the visitor agrees (consent.js, 14 Sep 2026) -->
   <script src="/consent.js" defer></script>
+  <!-- Cloudflare Web Analytics: counts every visit, no cookies, nothing stored in the browser (Director 25 Nov 2026) -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "493079ac964c44d0ae9a7eed49852dca"}'></script>
 </head>
 <body>
 
@@ -78,7 +80,7 @@
   <main class="legal-page">
     <p class="kicker">Privacy Policy</p>
     <h1>How your data is handled.</h1>
-    <p class="updated">Last updated: 14 September 2026</p>
+    <p class="updated">Last updated: 25 November 2026</p>
 
     <p>This is the privacy policy for Conversion Forge, a sole trader based in Sevenoaks, Kent, founded by Tk. It covers this website, conversionforge.co.uk, and the information you share when you get in touch or become a client. It is written to meet UK GDPR and the Privacy and Electronic Communications Regulations (PECR).</p>
 
@@ -91,7 +93,8 @@
     <ul>
       <li><strong>Hosting.</strong> The site is hosted on GitHub Pages (GitHub, Inc.) and delivered through Fastly's content network. To send you each page, they receive your IP address, browser details and the address you opened, and keep security logs under their own privacy terms. We cannot see those logs.</li>
       <li><strong>Fonts.</strong> The typeface is loaded from Google Fonts, so Google receives your IP address when the font file is fetched. Google Fonts does not set a cookie.</li>
-      <li><strong>Analytics, only if you agree.</strong> When you first arrive you are asked whether your visit can be counted with Google Analytics 4. Nothing from Google Analytics loads unless you choose yes. It is loaded through Google Tag Manager, which also loads only if you choose yes. If you do, it records the pages you view, roughly where you are (town level), the kind of device and browser, and whether you use the audit form or tap to email, phone or WhatsApp. Google says Analytics 4 does not store IP addresses. Visit-level data is kept for 2 months and user-level data for 14 months, then deleted. It is used only to see which pages help people, never for advertising.</li>
+      <li><strong>Visit counting, for everyone.</strong> Every page view is counted with Cloudflare Web Analytics (Cloudflare, Inc.). It sets no cookies, stores nothing in your browser and does not build a profile of you. It records the page you opened (without anything after a question mark in the address), the site that sent you, your browser and operating system, and how fast the page loaded. We only see totals, such as how many visits a page had, never who you are. If you would rather not be counted, a content or tracker blocker in your browser stops it loading.</li>
+      <li><strong>Google Analytics, only if you agree.</strong> When you first arrive you are asked whether your visit can be counted with Google Analytics 4. Nothing from Google Analytics loads unless you choose yes. It is loaded through Google Tag Manager, which also loads only if you choose yes. If you do, it records the pages you view, roughly where you are (town level), the kind of device and browser, and whether you use the audit form or tap to email, phone or WhatsApp. Google says Analytics 4 does not store IP addresses. Visit-level data is kept for 2 months and user-level data for 14 months, then deleted. It is used only to see which pages help people, never for advertising.</li>
       <li><strong>The chat assistant.</strong> The chat bubble is an AI assistant, not a person. Your messages are processed by an AI model running on Cloudflare (Cloudflare, Inc.). Conversation logs are kept in Cloudflare's storage and deleted automatically after 30 days; they are used to improve how the assistant answers. Your IP address is held for about two minutes to stop abuse. Please do not send sensitive personal information through it.</li>
     </ul>
 
@@ -118,14 +121,14 @@
       <li>Doing the work you have asked for, and handing it over.</li>
       <li>Invoicing and taking payment.</li>
       <li>Meeting legal duties, such as HMRC record keeping.</li>
-      <li>Counting visits to improve the site, only if you agreed to analytics.</li>
+      <li>Counting visits to improve the site: totals from Cloudflare Web Analytics for every visit, and Google Analytics only if you agreed.</li>
     </ul>
     <p>Your data is not sold, not shared for anyone else's marketing, and not used to train AI models.</p>
 
     <h2>The lawful bases</h2>
     <ul>
       <li><strong>Consent</strong> for Google Analytics. You can withdraw it at any time with the button below.</li>
-      <li><strong>Legitimate interests</strong> for replying to enquiries, running the chat assistant and keeping the site secure.</li>
+      <li><strong>Legitimate interests</strong> for replying to enquiries, running the chat assistant, counting visits with Cloudflare Web Analytics and keeping the site secure.</li>
       <li><strong>Contract</strong> for delivering work you have hired us for.</li>
       <li><strong>Legal obligation</strong> for invoices and tax records.</li>
     </ul>
@@ -136,6 +139,7 @@
     <h2>How long things are kept</h2>
     <ul>
       <li>Google Analytics (only if you agreed): visit data 2 months, user data 14 months.</li>
+      <li>Cloudflare Web Analytics: full detail for 7 days, then a sample of about 10%; we can see the totals for the past six months.</li>
       <li>Chat assistant logs: 30 days, deleted automatically.</li>
       <li>Emails and audit requests from people who do not become clients: 12 months from the last message, then deleted.</li>
       <li>Client project files: for the length of the project and up to six years afterwards, then deleted.</li>
@@ -143,7 +147,7 @@
     </ul>
 
     <h2 id="cookies">Cookies and your analytics choice</h2>
-    <p>This site sets no cookies unless you agree to analytics. If you choose yes, Google Analytics sets two cookies:</p>
+    <p>This site sets no cookies unless you agree to Google Analytics. Cloudflare Web Analytics sets none. If you choose yes, Google Analytics sets two cookies:</p>
     <ul>
       <li><strong>_ga</strong> and <strong>_ga_WH2KGWG5MH</strong>: tell one visit from another. They last up to two years.</li>
     </ul>
